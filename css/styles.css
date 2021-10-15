@@ -15,4 +15,13 @@
   .nav__link {
     @apply font-semibold text-lg;
   }
+  .clanek_container {
+    @apply relative h-72 w-full flex items-end;
+  }
+  .clanek_overlay {
+    @apply absolute inset-0 md:inset-unset md:right-0 w-full md:w-5/6 h-full bg-gradient-to-t from-black to-gray-500 opacity-60 z-10;
+  }
+  .clanek_img {
+    @apply absolute inset-0 md:inset-unset md:right-0 h-full w-full md:w-5/6 object-cover;
+  }
 }

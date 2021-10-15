@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         body: ['"Inter"', "sans-serif"],
       },
+      inset: {
+        unset: "unset",
+      },
     },
   },
   variants: {

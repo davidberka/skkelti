@@ -41,7 +41,7 @@
             <img src="../images/svgs/search.svg" alt="search_icon" />
           </div>
           <!-- SOCIALS -->
-          <div class="">
+          <div>
             <a href="#" target="_blank">
               <img src="../images/svgs/fb.svg" alt="social_icons" />
             </a>
@@ -74,6 +74,7 @@
             justify-center
             items-center
             w-2/3
+            md:w-96
             flex-col
             space-y-16
           "
@@ -114,26 +115,21 @@
     </header>
     <main>
       <!-- TOP ARTICLES -->
-      <section class="bg-dark_blue px-3 pb-9">
+      <section class="bg-dark_blue px-3 pb-9 md:py-9">
         <img class="hidden" src="../images/bg.png" alt="" />
-        <div class="flex flex-col space-y-6 mb-8">
-          <div class="relative h-72 w-full flex items-end">
-            <div
-              class="
-                absolute
-                inset-0
-                w-full
-                h-full
-                bg-gradient-to-t
-                from-black
-                to-gray-500
-                opacity-60
-                block
-                z-10
-              "
-            ></div>
+        <div
+          class="
+            flex flex-col
+            md:flex-row md:grid md:grid-cols-2 md:gap-10
+            space-y-6
+            md:space-y-0
+            mb-8
+          "
+        >
+          <div class="clanek_container">
+            <div class="clanek_overlay"></div>
             <img
-              class="absolute inset-0 h-full w-full object-cover"
+              class="clanek_img"
               src="../images/clanek_photo3.png"
               alt="clanek_img"
             />
@@ -150,23 +146,10 @@
               <a href="#" class="text-sm">číst více</a>
             </div>
           </div>
-          <div class="relative h-72 w-full flex items-end">
-            <div
-              class="
-                absolute
-                inset-0
-                w-full
-                h-full
-                bg-gradient-to-t
-                from-black
-                to-gray-500
-                opacity-60
-                block
-                z-10
-              "
-            ></div>
+          <div class="clanek_container">
+            <div class="clanek_overlay"></div>
             <img
-              class="absolute inset-0 h-full w-full object-cover"
+              class="clanek_img"
               src="../images/clanek_photo2.png"
               alt="clanek_img"
             />
@@ -183,23 +166,10 @@
               <a href="#" class="text-sm">číst více</a>
             </div>
           </div>
-          <div class="relative h-72 w-full flex items-end">
-            <div
-              class="
-                absolute
-                inset-0
-                w-full
-                h-full
-                bg-gradient-to-t
-                from-black
-                to-gray-500
-                opacity-60
-                block
-                z-10
-              "
-            ></div>
+          <div class="clanek_container">
+            <div class="clanek_overlay"></div>
             <img
-              class="absolute inset-0 h-full w-full object-cover"
+              class="clanek_img"
               src="../images/clanek_photo1.png"
               alt="clanek_img"
             />
@@ -216,23 +186,10 @@
               <a href="#" class="text-sm">číst více</a>
             </div>
           </div>
-          <div class="relative h-72 w-full flex items-end">
-            <div
-              class="
-                absolute
-                inset-0
-                w-full
-                h-full
-                bg-gradient-to-t
-                from-black
-                to-gray-500
-                opacity-60
-                block
-                z-10
-              "
-            ></div>
+          <div class="clanek_container">
+            <div class="clanek_overlay"></div>
             <img
-              class="absolute inset-0 h-full w-full object-cover"
+              class="clanek_img"
               src="../images/clanek_photo4.png"
               alt="clanek_img"
             />
@@ -268,7 +225,9 @@
         </div>
       </section>
       <section class="bg-light_blue px-3 py-9">
-        <div class="flex flex-col space-y-6">
+        <div
+          class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-3"
+        >
           <div
             class="
               w-full
