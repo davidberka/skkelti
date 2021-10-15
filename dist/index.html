@@ -59,8 +59,26 @@
         </div>
         <!-- ROW 1 -->
         <!-- ROW 2 -->
-        <nav class="hidden">
-          <ul>
+        <nav
+          class="
+            navigation
+            fixed
+            right-0
+            top-0
+            z-40
+            h-screen
+            transition-transform
+            duration-300
+            bg-dark_blue
+            flex
+            justify-center
+            items-center
+            w-2/3
+            flex-col
+            space-y-16
+          "
+        >
+          <ul class="flex flex-col space-y-4">
             <li class="nav__link"><a href="#">Novinky</a></li>
             <li class="nav__link"><a href="#">Muži</a></li>
             <li class="nav__link"><a href="#">Mládež</a></li>
@@ -71,10 +89,24 @@
             <li class="nav__link"><a href="#">Nábor</a></li>
             <li class="nav__link"><a href="#">Kontakt</a></li>
           </ul>
+          <div class="flex space-x-6">
+            <a href="#" target="_blank">
+              <img src="../images/svgs/fb.svg" alt="social_icons" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="../images/svgs/yt.svg" alt="social_icons" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="../images/svgs/ig.svg" alt="social_icons" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="../images/svgs/rajce.svg" alt="social_icons" />
+            </a>
+          </div>
         </nav>
         <!-- ROW 2 -->
       </div>
-      <div class="p-3 cursor-pointer z-20 lg:hidden">
+      <div class="burger p-3 cursor-pointer z-50 lg:hidden">
         <div class="w-8 h-1 bg-club_white rounded"></div>
         <div class="w-8 h-1 bg-club_white my-2 rounded"></div>
         <div class="w-8 h-1 bg-club_white rounded"></div>
@@ -734,7 +766,31 @@
         <!-- Partneri -->
         <div>
           <h1 class="font-bold text-xl mb-4">Partneři</h1>
-          <div>
+          <div class="flex flex-wrap gap-8">
+            <div>
+              <img src="../images/partner.png" alt="" />
+            </div>
+            <div>
+              <img src="../images/partner.png" alt="" />
+            </div>
+            <div>
+              <img src="../images/partner.png" alt="" />
+            </div>
+            <div>
+              <img src="../images/partner.png" alt="" />
+            </div>
+            <div>
+              <img src="../images/partner.png" alt="" />
+            </div>
+            <div>
+              <img src="../images/partner.png" alt="" />
+            </div>
+            <div>
+              <img src="../images/partner.png" alt="" />
+            </div>
+            <div>
+              <img src="../images/partner.png" alt="" />
+            </div>
             <div>
               <img src="../images/partner.png" alt="" />
             </div>
@@ -743,5 +799,76 @@
         <!-- Partneri -->
       </section>
     </main>
+    <footer class="footer text-club_white bg-dark_blue px-3 py-9">
+      <!-- Row 1 -->
+      <div class="mb-9">
+        <div class="mb-9">
+          <img src="../images/logo.png" alt="" />
+          <p class="text-sm my-6">
+            Hokejbalový klub SK Kelti 2008 z.s.<br />
+            Slunečná 1745,<br />
+            266 01, Beroun
+          </p>
+          <div class="flex space-x-6">
+            <img src="../images/svgs/fb.svg" alt="social_icons" />
+            <img src="../images/svgs/yt.svg" alt="social_icons" />
+            <img src="../images/svgs/ig.svg" alt="social_icons" />
+            <img src="../images/svgs/rajce.svg" alt="social_icons" />
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="flex flex-col space-y-4 mb-9 w-1/2">
+            <h5 class="text-sm font-bold"><a href="#">Novinky</a></h5>
+            <h5 class="text-sm font-bold"><a href="#">Foto</a></h5>
+            <h5 class="text-sm font-bold"><a href="#">Klub</a></h5>
+            <h5 class="text-sm font-bold"><a href="#">Partneři</a></h5>
+            <h5 class="text-sm font-bold"><a href="#">Nábor</a></h5>
+          </div>
+          <div class="w-1/2">
+            <h5 class="text-sm font-bold mb-4">Muži</h5>
+            <ul class="flex flex-col space-y-2">
+              <li class="text-sm"><a href="#">A-tým</a></li>
+              <li class="text-sm"><a href="#">B-tým</a></li>
+            </ul>
+          </div>
+          <div class="w-1/2">
+            <h5 class="text-sm font-bold mb-4">Mládež</h5>
+            <ul class="flex flex-col space-y-2">
+              <li class="text-sm"><a href="#">Dorost</a></li>
+              <li class="text-sm"><a href="#">Starší žáci</a></li>
+              <li class="text-sm"><a href="#">Mladší žáci</a></li>
+              <li class="text-sm"><a href="#">Přípravka 2010</a></li>
+              <li class="text-sm"><a href="#">Přípravka 2011</a></li>
+              <li class="text-sm"><a href="#">Přípravka 2012</a></li>
+              <li class="text-sm"><a href="#">Přípravka 2013</a></li>
+              <li class="text-sm"><a href="#">Přípravka 2014 a ml.</a></li>
+            </ul>
+          </div>
+          <div class="w-1/2">
+            <h5 class="text-sm font-bold mb-4">Ženy</h5>
+            <ul class="flex flex-col space-y-2">
+              <li class="text-sm"><a href="#">Juniorky</a></li>
+              <li class="text-sm"><a href="#">Mladší žákyně</a></li>
+              <li class="text-sm"><a href="#">Dívky</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Row 1 -->
+      <!-- Row 2 -->
+      <div>
+        <p class="text-sm mb-4">
+          © Hokejbalový klub SK Kelti 2008 z.s., 2021. Všechna práva vyhrazena
+        </p>
+        <p class="flex text-sm">
+          Vyrobeno v&nbsp;
+          <img src="../images/svgs/esports_logo.svg" alt="esports_logo" />&nbsp;
+          v roce 2021
+        </p>
+      </div>
+      <!-- Row 2 -->
+    </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>

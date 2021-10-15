@@ -6,4 +6,13 @@
   .table_container tr {
     @apply h-10 border-b border-b-dark_blue border-opacity-20;
   }
+  .navigation {
+    transform: translateX(100%);
+  }
+  .navigation.menu_active {
+    transform: translateX(0);
+  }
+  .nav__link {
+    @apply font-semibold text-lg;
+  }
 }
