@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .table_container tr {
+    @apply h-10 border-b border-b-dark_blue border-opacity-20;
+  }
+}
