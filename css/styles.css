@@ -13,15 +13,63 @@
     transform: translateX(0);
   }
   .nav__link {
-    @apply font-semibold text-lg;
+    @apply font-semibold text-lg relative;
+  }
+  .nav__link:not(:first-child)::before {
+    content: "";
+    @apply absolute -left-5 2xl:-left-10 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-club_yellow;
   }
   .clanek_container {
-    @apply relative h-72 w-full flex items-end;
+    @apply relative h-72 lg:h-80 w-full lg:w-5/6 flex items-end;
   }
   .clanek_overlay {
-    @apply absolute inset-0 md:inset-unset md:right-0 w-full md:w-5/6 h-full bg-gradient-to-t from-black to-gray-500 opacity-60 z-10;
+    @apply absolute inset-0 md:inset-unset md:right-0 w-full md:w-5/6 lg:w-72 h-full xl:w-96 xl:h-112 bg-gradient-to-t from-black to-gray-500 opacity-60 z-10;
   }
   .clanek_img {
-    @apply absolute inset-0 md:inset-unset md:right-0 h-full w-full md:w-5/6 object-cover;
+    @apply absolute inset-0 md:inset-unset md:right-0 h-full w-full md:w-5/6 lg:w-72 xl:w-96 xl:h-112 object-cover;
+  }
+  .top_clanky::before {
+    content: "";
+    @apply hidden xl:block absolute w-96 h-96 rounded-full -left-56 -top-12 bg-light_blue bg-opacity-50 blur-3xl z-0;
+  }
+  @media only screen and (min-width: 1024px) {
+    .top_clanky_container {
+      grid-template-columns: 11.5% 33.5% 10% 35% 10% !important;
+      grid-template-rows: 10% 40% 10% 40%;
+    }
+    .clanek_container:nth-child(1) {
+      grid-row: 1/3;
+      grid-column: 2/4;
+    }
+    .clanek_container:nth-child(2) {
+      grid-row: 2/3;
+      grid-column: 4/6;
+    }
+    .clanek_container:nth-child(3) {
+      grid-row: 4/5;
+      grid-column: 3/5;
+    }
+    .clanek_container:nth-child(4) {
+      grid-row: 3/4;
+      grid-column: 1/3;
+    }
+  }
+  @media only screen and (min-width: 1320px) {
+    .top_clanky_container {
+      grid-template-rows:
+        minmax(240px, 40%)
+        minmax(240px, 10%) minmax(300px, 40%) minmax(140px, 10%)
+        minmax(140px, 10%);
+    }
+    .clanek_container {
+      align-self: center;
+    }
+    .clanek_container:nth-child(4) {
+      align-self: end;
+    }
+  }
+  .footer::before {
+    content: "";
+    @apply absolute w-96 h-96 rounded-full left-1/2 -translate-x-1/2 -bottom-1/2 bg-light_blue bg-opacity-50 blur-3xl z-0;
   }
 }

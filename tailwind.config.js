@@ -16,6 +16,16 @@ module.exports = {
       inset: {
         unset: "unset",
       },
+      height: {
+        26: "104px",
+        112: "440px",
+      },
+      width: {
+        106: "410px",
+      },
+      screens: {
+        "3xl": "1920px",
+      },
     },
   },
   variants: {
