@@ -13,7 +13,7 @@
     transform: translateX(0);
   }
   .nav__link {
-    @apply font-semibold text-lg relative;
+    @apply font-semibold text-lg relative transition-colors hover:text-club_yellow;
   }
   .nav__link:not(:first-child)::before {
     content: "";
