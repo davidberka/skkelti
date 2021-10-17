@@ -12,12 +12,18 @@
   .navigation.menu_active {
     transform: translateX(0);
   }
+  .dropdown_menu {
+    @apply hidden;
+  }
+  .dropdown_menu.active {
+    @apply flex flex-col space-y-1;
+  }
   .nav__link {
-    @apply font-semibold text-lg relative transition-colors hover:text-club_yellow;
+    @apply font-semibold text-lg relative;
   }
   .nav__link:not(:first-child)::before {
     content: "";
-    @apply absolute -left-5 2xl:-left-10 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-club_yellow;
+    @apply hidden lg:block absolute -left-5 2xl:-left-10 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-club_yellow;
   }
   .clanek_container {
     @apply relative h-72 lg:h-80 w-full lg:w-5/6 flex items-end;
