@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         body: ['"Inter"', "sans-serif"],
       },
+      fontSize: {
+        article_title: ["64px", "82.4px"],
+      },
       inset: {
         unset: "unset",
       },
@@ -22,6 +25,8 @@ module.exports = {
       },
       width: {
         106: "410px",
+        150: "620px",
+        200: "850px",
       },
       screens: {
         "3xl": "1920px",
