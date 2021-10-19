@@ -19,6 +19,9 @@ module.exports = {
       inset: {
         unset: "unset",
       },
+      lineHeight: {
+        "extra-tight": "0.65",
+      },
       height: {
         26: "104px",
         112: "440px",

@@ -19,7 +19,7 @@
     @apply flex flex-col space-y-1;
   }
   .nav__link {
-    @apply font-semibold text-lg relative;
+    @apply font-semibold text-lg text-center lg:text-left relative;
   }
   .nav__link:not(:first-child)::before {
     content: "";
