@@ -25,6 +25,7 @@ module.exports = {
       height: {
         26: "104px",
         112: "440px",
+        max: "max-content",
       },
       width: {
         106: "410px",
