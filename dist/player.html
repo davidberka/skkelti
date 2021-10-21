@@ -297,23 +297,49 @@
     <main>
       <section
         class="
+          player_profile
           relative
           text-club_white
           bg-dark_blue
           px-3
           pt-9
-          2xl:pb-36 2xl:py-20
+          2xl:pt-16
+          overflow-y-hidden
         "
       >
-        <div>
+        <img
+          class="hidden 2xl:block 2xl:absolute 2xl:right-0"
+          src="../images/bg.png"
+          alt=""
+        />
+        <div class="lg:w-5/6 3xl:w-3/4 lg:mx-auto">
           <!-- <div>
             <h4 class="text-sm">
               Hlavní stránka / Muži / Soupiska / František Novopečený
             </h4>
           </div> -->
-          <div>
-            <div>
-              <img src="../images/player.png" alt="player_img" />
+          <div
+            class="
+              relative
+              z-10
+              flex flex-col
+              md:flex-row-reverse md:justify-between
+            "
+          >
+            <div
+              class="
+                h-64
+                md:h-full md:w-1/2
+                mb-6
+                md:mb-0
+                2xl:w-150 2xl:self-end
+              "
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="../images/player.png"
+                alt="player_img"
+              />
             </div>
             <div>
               <span
@@ -328,37 +354,84 @@
                 "
                 >Obránce</span
               >
-              <h2>František <span class="font-bold">Novopečený</span></h2>
-              <div>
-                <div>
+              <h2 class="mt-6 mb-9 text-4xl 2xl:text-article_title">
+                František <span class="font-bold">Novopečený</span>
+              </h2>
+              <div
+                class="
+                  grid grid-cols-2
+                  2xl:flex 2xl:flex-wrap
+                  gap-x-12 gap-y-8
+                  2xl:gap-9 2xl:w-3/4
+                "
+              >
+                <div class="player_info">
                   <h3>Narozen</h3>
                   <h4>25. 2. 1996</h4>
                 </div>
-                <div>
+                <div class="player_info">
                   <h3>Hůl</h3>
                   <h4>pravá</h4>
                 </div>
-                <div>
+                <div class="player_info">
                   <h3>Předchozí klub</h3>
                   <h4>HC Slavia Praha</h4>
                 </div>
-                <div>
+                <div class="player_info">
                   <h3>Výška</h3>
                   <h4>194 cm</h4>
                 </div>
-                <div>
+                <div class="player_info">
                   <h3>Váha</h3>
                   <h4>98 kg</h4>
                 </div>
               </div>
-              <h1>#68</h1>
+              <h1
+                class="
+                  mt-4
+                  text-5xl
+                  2xl:text-player_num
+                  font-black
+                  italic
+                  transform
+                  translate-y-2
+                  2xl:translate-y-16 2xl:mt-0
+                "
+              >
+                #68
+              </h1>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <p>
+      <section class="text-dark_blue bg-club_white">
+        <div
+          class="
+            px-3
+            py-9
+            2xl:py-16
+            flex flex-col
+            2xl:flex-row
+            space-y-6
+            lg:w-5/6
+            3xl:w-3/4
+            lg:mx-auto
+            2xl:space-x-6 2xl:space-y-0
+          "
+        >
+          <p
+            class="
+              first-letter:text-4xl
+              2xl:first-letter:text-article_title
+              first-letter:font-bold
+              first-letter:leading-extra-tight
+              first-letter:pr-2
+              first-letter:pt-2
+              2xl:first-letter:pt-0
+              first-letter:float-left
+              2xl:flex-1
+            "
+          >
             Paris Saint Germain a Manchester City bezpochyby patří k jedněm z
             nejlépe zajištěných fotbalových klubů planety. Vyplývá to ze spojení
             francouzského, respektive anglického klubu s majiteli z arabského
@@ -382,13 +455,37 @@
             prvních kvalifikačních duelech mistrovství světa vystoupili i sami
             hráči
           </p>
-          <div>
-            <img src="../images/clanek_photo2.png" alt="" />
-            <img src="../images/clanek_photo2.png" alt="" />
-            <img src="../images/clanek_photo2.png" alt="" />
-            <img src="../images/clanek_photo2.png" alt="" />
-            <img src="../images/clanek_photo2.png" alt="" />
-            <img src="../images/clanek_photo2.png" alt="" />
+          <div class="player_photos 2xl:flex-1">
+            <img
+              class="h-64 md:h-full object-cover w-full"
+              src="../images/clanek_photo2.png"
+              alt=""
+            />
+            <img
+              class="h-64 md:h-full object-cover w-full"
+              src="../images/clanek_photo2.png"
+              alt=""
+            />
+            <img
+              class="h-64 md:h-full object-cover w-full"
+              src="../images/clanek_photo2.png"
+              alt=""
+            />
+            <img
+              class="h-64 md:h-full object-cover w-full"
+              src="../images/clanek_photo2.png"
+              alt=""
+            />
+            <img
+              class="h-64 md:h-full object-cover w-full"
+              src="../images/clanek_photo2.png"
+              alt=""
+            />
+            <img
+              class="h-64 md:h-full object-cover w-full"
+              src="../images/clanek_photo2.png"
+              alt=""
+            />
           </div>
         </div>
       </section>

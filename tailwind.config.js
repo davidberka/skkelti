@@ -15,6 +15,7 @@ module.exports = {
       },
       fontSize: {
         article_title: ["64px", "82.4px"],
+        player_num: "288px",
       },
       inset: {
         unset: "unset",
