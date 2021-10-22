@@ -62,3 +62,36 @@ rosterFilters.forEach((filter) => {
   });
 });
 // ROSTER FILTERS - END
+
+// SHOW MORE ARTICLES BUTTON - START
+const showArticlesBtn = document.querySelector(".show_articles");
+const articlesContainer = document.querySelector(".archive_clanky_container");
+const articleContainerContent =
+  document.querySelector(".clanek_container").innerHTML;
+
+showArticlesBtn.addEventListener("click", () => {
+  const article = document.createElement("div");
+  article.className = "clanek_container";
+  article.innerHTML += articleContainerContent;
+  articlesContainer.appendChild(article);
+  articlesContainer.appendChild(article.cloneNode(true));
+});
+// SHOW MORE ARTICLES BUTTON - END
+
+// SCROLL UP BTN - START
+const scrollUpBtn = document.querySelector(".scroll_up");
+
+if (scrollUpBtn) scrollUpBtn.style.display = "none";
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY < 500) {
+    scrollUpBtn.style.display = "none";
+  } else {
+    scrollUpBtn.style.display = "block";
+  }
+});
+
+scrollUpBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+// SCROLL UP BTN - END
