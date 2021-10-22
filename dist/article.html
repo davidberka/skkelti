@@ -13,36 +13,11 @@
     />
     <link rel="stylesheet" href="../src/styles.css" />
   </head>
-  <body class="w-full font-body">
-    <header
-      class="
-        z-50
-        relative
-        w-full
-        h-20
-        lg:h-26
-        px-3
-        bg-light_blue
-        text-club_white
-        border-b-2
-        2xl:border-b-4
-        border-club_white
-      "
-    >
-      <div
-        class="
-          h-full
-          w-full
-          flex
-          items-center
-          justify-between
-          lg:justify-start lg:w-11/12 lg:mx-auto
-          2xl:w-5/6
-          3xl:w-3/4
-        "
-      >
-        <div class="h-5/6 lg:mr-6">
-          <a href="#">
+  <body>
+    <header class="header">
+      <div class="header_container">
+        <div class="h-5/6 lg:mr-6 scale_transform">
+          <a href="index.html">
             <img
               class="w-full h-full object-contain"
               src="../images/logo.png"
@@ -52,19 +27,7 @@
         </div>
         <div class="lg:w-full">
           <!-- ROW 1 -->
-          <div
-            class="
-              hidden
-              lg:flex
-              lg:justify-between
-              lg:items-center
-              lg:h-1/2
-              lg:py-3
-              lg:border-b
-              lg:border-b-club_white
-              lg:border-opacity-40
-            "
-          >
+          <div class="header_row1">
             <h2 class="font-black text-2xl">SK KELTI 2008</h2>
             <div class="flex">
               <div
@@ -89,16 +52,16 @@
               </div>
               <!-- SOCIALS -->
               <div class="lg:flex lg:pl-6 lg:space-x-6">
-                <a href="#" target="_blank">
+                <a class="scale_transform" href="#" target="_blank">
                   <img src="../images/svgs/fb.svg" alt="social_icons" />
                 </a>
-                <a href="#" target="_blank">
+                <a class="scale_transform" href="#" target="_blank">
                   <img src="../images/svgs/yt.svg" alt="social_icons" />
                 </a>
-                <a href="#" target="_blank">
+                <a class="scale_transform" href="#" target="_blank">
                   <img src="../images/svgs/ig.svg" alt="social_icons" />
                 </a>
-                <a href="#" target="_blank">
+                <a class="scale_transform" href="#" target="_blank">
                   <img src="../images/svgs/rajce.svg" alt="social_icons" />
                 </a>
               </div>
@@ -107,34 +70,7 @@
           </div>
           <!-- ROW 1 -->
           <!-- ROW 2 -->
-          <nav
-            class="
-              navigation
-              fixed
-              top-0
-              right-0
-              z-40
-              h-screen
-              transition-transform
-              duration-300
-              bg-dark_blue
-              flex
-              justify-center
-              items-center
-              w-2/3
-              md:w-96
-              flex-col
-              space-y-16
-              lg:translate-x-0
-              lg:bg-transparent
-              lg:h-1/2
-              lg:space-y-0
-              lg:flex-row
-              lg:static
-              lg:w-max
-              lg:py-3
-            "
-          >
+          <nav class="navigation">
             <ul
               class="
                 flex flex-col
@@ -143,131 +79,77 @@
                 2xl:space-x-20
               "
             >
-              <li class="nav__link">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Novinky</a
-                >
+              <li class="nav_link">
+                <a class="hover_yellow" href="#">Novinky</a>
               </li>
-              <li class="nav__link group">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Muži</a
-                >
-                <ul
-                  class="
-                    dropdown_menu
-                    lg:absolute
-                    lg:hidden
-                    lg:group-hover:flex
-                    lg:bg-light_blue
-                    lg:p-3
-                    lg:w-max
-                    lg:flex-col
-                    lg:space-y-3
-                  "
-                >
-                  <li class="transition-colors hover:text-club_yellow">
+              <li class="nav_link group">
+                <a class="hover_yellow" href="#">Muži</a>
+                <ul class="dropdown_menu">
+                  <li class="hover_yellow">
                     <a href="#">A-tým</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">B-tým</a>
                   </li>
                 </ul>
               </li>
-              <li class="nav__link group">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Mládež</a
-                >
-                <ul
-                  class="
-                    dropdown_menu
-                    lg:absolute
-                    lg:hidden
-                    lg:group-hover:flex
-                    lg:bg-light_blue
-                    lg:p-3
-                    lg:w-max
-                    lg:flex-col
-                    lg:space-y-3
-                  "
-                >
-                  <li class="transition-colors hover:text-club_yellow">
+              <li class="nav_link group">
+                <a class="hover_yellow" href="#">Mládež</a>
+                <ul class="dropdown_menu">
+                  <li class="hover_yellow">
                     <a href="#">Dorost</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Starší žáci</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Mladší žáci</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Přípravka 2010</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Přípravka 2011</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Přípravka 2012</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Přípravka 2013</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Přípravka 2014 a ml.</a>
                   </li>
                 </ul>
               </li>
-              <li class="nav__link group">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Ženy</a
-                >
-                <ul
-                  class="
-                    dropdown_menu
-                    lg:absolute
-                    lg:hidden
-                    lg:group-hover:flex
-                    lg:bg-light_blue
-                    lg:p-3
-                    lg:w-max
-                    lg:flex-col
-                    lg:space-y-3
-                  "
-                >
-                  <li class="transition-colors hover:text-club_yellow">
+              <li class="nav_link group">
+                <a class="hover_yellow" href="#">Ženy</a>
+                <ul class="dropdown_menu">
+                  <li class="hover_yellow">
                     <a href="#">Juniorky</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Mladší žákyně</a>
                   </li>
-                  <li class="transition-colors hover:text-club_yellow">
+                  <li class="hover_yellow">
                     <a href="#">Dívky</a>
                   </li>
                 </ul>
               </li>
-              <li class="nav__link">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Foto</a
-                >
+              <li class="nav_link">
+                <a class="hover_yellow" href="#">Foto</a>
               </li>
-              <li class="nav__link">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Klub</a
-                >
+              <li class="nav_link">
+                <a class="hover_yellow" href="#">Klub</a>
               </li>
-              <li class="nav__link">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Partneři</a
-                >
+              <li class="nav_link">
+                <a class="hover_yellow" href="#">Partneři</a>
               </li>
-              <li class="nav__link">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Nábor</a
-                >
+              <li class="nav_link">
+                <a class="hover_yellow" href="#">Nábor</a>
               </li>
-              <li class="nav__link">
-                <a class="transition-colors hover:text-club_yellow" href="#"
-                  >Kontakt</a
-                >
+              <li class="nav_link">
+                <a class="hover_yellow" href="#">Kontakt</a>
               </li>
             </ul>
             <div class="flex space-x-6 lg:hidden">
@@ -287,7 +169,7 @@
           </nav>
           <!-- ROW 2 -->
         </div>
-        <div class="burger p-3 cursor-pointer z-50 lg:hidden">
+        <div class="burger">
           <div class="w-8 h-1 bg-club_white rounded"></div>
           <div class="w-8 h-1 bg-club_white my-2 rounded"></div>
           <div class="w-8 h-1 bg-club_white rounded"></div>
@@ -301,20 +183,7 @@
           src="../images/bg.png"
           alt=""
         />
-        <div
-          class="
-            px-3
-            py-9
-            2xl:pb-36 2xl:py-20
-            relative
-            flex flex-col-reverse
-            md:w-3/4
-            lg:flex-col lg:w-5/6
-            2xl:w-9_5/12
-            lg:mx-auto
-            3xl:w-3/4
-          "
-        >
+        <div class="article_inner">
           <div class="pt-6 lg:pt-0 lg:w-3/4">
             <div class="flex space-x-2 items-center mb-4 2xl:mb-6">
               <span class="bg-light_blue rounded-full text-sm py-1 px-3"
@@ -334,17 +203,7 @@
               politické ideje.
             </h3>
           </div>
-          <div
-            class="
-              z-20
-              w-full
-              lg:w-96
-              h-64
-              lg:absolute lg:right-0 lg:bottom-0 lg:transform lg:translate-y-1/2
-              2xl:h-112 2xl:w-150
-              lg:mr-3
-            "
-          >
+          <div class="article_main_img">
             <img
               class="w-full h-full object-cover"
               src="../images/clanek_photo2.png"
@@ -354,29 +213,9 @@
         </div>
       </section>
       <section class="bg-club_white text-dark_blue px-3 py-9 2xl:py-12">
-        <div
-          class="
-            flex flex-col
-            space-y-9
-            2xl:space-y-16
-            lg:w-5/6
-            3xl:w-3/4
-            lg:mx-auto
-          "
-        >
+        <div class="text_container">
           <div class="lg:w-5/12">
-            <p
-              class="
-                first-letter:text-4xl
-                2xl:first-letter:text-article_title
-                first-letter:font-bold
-                first-letter:leading-extra-tight
-                first-letter:pr-2
-                first-letter:pt-2
-                2xl:first-letter:pt-0
-                first-letter:float-left
-              "
-            >
+            <p>
               Prestižní souboj nejzářivějších fotbalových hvězd současnosti, ale
               i střet dvou politických rivalů arabského světa. Takovou zápletku
               nabízí dnešní semifinále Ligy mistrů. Citizens patří od roku 2008
@@ -626,7 +465,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-dark_blue text-club_white px-3 py-9 2xl:py-12">
+      <section class="more_articles">
         <div class="lg:w-5/6 lg:mx-auto 3xl:w-3/4">
           <div
             class="
@@ -636,7 +475,7 @@
               md:space-y-0 md:gap-x-4 md:gap-y-6
             "
           >
-            <div class="flex md:flex-col md:w-72 2xl:w-72">
+            <div class="more_articles_article">
               <div class="w-1/3 2xl:w-72 md:w-full h-28 md:h-48 2xl:h-64 mr-8">
                 <img
                   class="w-full h-full object-cover"
@@ -673,14 +512,10 @@
                 >
                   Starší žáci v zápasových zkouškách uspěli
                 </h1>
-                <a
-                  href="#"
-                  class="text-sm transition-colors hover:text-club_yellow"
-                  >číst více</a
-                >
+                <a href="#" class="text-sm hover_yellow">číst více</a>
               </div>
             </div>
-            <div class="flex md:flex-col md:w-72 2xl:w-72">
+            <div class="more_articles_article">
               <div class="w-1/3 2xl:w-72 md:w-full h-28 md:h-48 2xl:h-64 mr-8">
                 <img
                   class="w-full h-full object-cover"
@@ -717,14 +552,10 @@
                 >
                   Starší žáci v zápasových zkouškách uspěli
                 </h1>
-                <a
-                  href="#"
-                  class="text-sm transition-colors hover:text-club_yellow"
-                  >číst více</a
-                >
+                <a href="#" class="text-sm hover_yellow">číst více</a>
               </div>
             </div>
-            <div class="flex md:flex-col md:w-72 2xl:w-72">
+            <div class="more_articles_article">
               <div class="w-1/3 2xl:w-72 md:w-full h-28 md:h-48 2xl:h-64 mr-8">
                 <img
                   class="w-full h-full object-cover"
@@ -761,14 +592,10 @@
                 >
                   Starší žáci v zápasových zkouškách uspěli
                 </h1>
-                <a
-                  href="#"
-                  class="text-sm transition-colors hover:text-club_yellow"
-                  >číst více</a
-                >
+                <a href="#" class="text-sm hover_yellow">číst více</a>
               </div>
             </div>
-            <div class="flex md:flex-col md:w-72 2xl:w-72">
+            <div class="more_articles_article">
               <div class="w-1/3 2xl:w-72 md:w-full h-28 md:h-48 2xl:h-64 mr-8">
                 <img
                   class="w-full h-full object-cover"
@@ -805,41 +632,19 @@
                 >
                   Starší žáci v zápasových zkouškách uspěli
                 </h1>
-                <a
-                  href="#"
-                  class="text-sm transition-colors hover:text-club_yellow"
-                  >číst více</a
-                >
+                <a href="#" class="text-sm hover_yellow">číst více</a>
               </div>
             </div>
           </div>
           <div class="w-full flex justify-center mt-9 2xl:mt-16">
-            <a
-              href="#"
-              class="
-                z-10
-                relative
-                border
-                border-club_white
-                text-club_white
-                text-sm
-                rounded-full
-                py-2
-                px-4
-                2xl:py-4 2xl:px-8
-                flex
-                transition-all
-                hover:scale-105 hover:shadow-xl
-                items-center
-              "
-            >
+            <a href="#" class="show_articles">
               Zobrazit další články
               <img class="ml-4" src="../images/svgs/arrow_right.svg" alt="" />
             </a>
           </div>
         </div>
       </section>
-      <section class="bg-light_blue px-3 py-9 2xl:py-12">
+      <section class="social_section">
         <div class="lg:w-5/6 3xl:w-3/4 lg:mx-auto">
           <div
             class="
@@ -849,55 +654,19 @@
               md:space-y-0 md:space-x-3
             "
           >
-            <div
-              class="
-                w-full
-                bg-dark_blue
-                bg-opacity-20
-                py-8
-                2xl:py-12
-                flex
-                items-center
-                justify-center
-                backdrop-filter backdrop-blur-sm
-              "
-            >
+            <div class="social_item">
               <div class="flex flex-col items-center">
                 <img src="../images/svgs/fb.svg" alt="" />
                 <h5 class="text-club_white text-sm mt-2">Facebook</h5>
               </div>
             </div>
-            <div
-              class="
-                w-full
-                bg-dark_blue
-                bg-opacity-20
-                py-8
-                2xl:py-12
-                flex
-                items-center
-                justify-center
-                backdrop-filter backdrop-blur-sm
-              "
-            >
+            <div class="social_item">
               <div class="flex flex-col items-center">
                 <img src="../images/svgs/yt.svg" alt="" />
                 <h5 class="text-club_white text-sm mt-2">Youtube</h5>
               </div>
             </div>
-            <div
-              class="
-                w-full
-                bg-dark_blue
-                bg-opacity-20
-                py-8
-                2xl:py-12
-                flex
-                items-center
-                justify-center
-                backdrop-filter backdrop-blur-sm
-              "
-            >
+            <div class="social_item">
               <div class="flex flex-col items-center">
                 <img src="../images/svgs/ig.svg" alt="" />
                 <h5 class="text-club_white text-sm mt-2">Instagram</h5>
@@ -907,113 +676,59 @@
         </div>
       </section>
     </main>
-    <footer
-      class="
-        footer
-        relative
-        overflow-y-hidden
-        text-club_white
-        bg-dark_blue
-        px-3
-        py-9
-        2xl:py-12
-      "
-    >
+    <footer class="footer">
       <div class="lg:w-5/6 3xl:w-3/4 lg:mx-auto">
         <!-- Row 1 -->
-        <div
-          class="
-            mb-9
-            md:flex
-            md:justify-between
-            md:border-b
-            md:border-b-club_white
-            md:border-opacity-20
-            md:pb-9
-          "
-        >
+        <div class="footer_row1">
           <div class="mb-9">
-            <img src="../images/logo.png" alt="" />
+            <a href="index.html">
+              <img class="scale_transform" src="../images/logo.png" alt="" />
+            </a>
             <p class="text-sm my-6">
               Hokejbalový klub SK Kelti 2008 z.s.<br />
               Slunečná 1745,<br />
               266 01, Beroun
             </p>
             <div class="flex space-x-6">
-              <a href="#">
+              <a class="scale_transform" href="#" target="_blank">
                 <img src="../images/svgs/fb.svg" alt="social_icons" />
               </a>
-              <a href="#">
+              <a class="scale_transform" href="#" target="_blank">
                 <img src="../images/svgs/yt.svg" alt="social_icons" />
               </a>
-              <a href="#">
+              <a class="scale_transform" href="#" target="_blank">
                 <img src="../images/svgs/ig.svg" alt="social_icons" />
               </a>
-              <a href="#">
+              <a class="scale_transform" href="#" target="_blank">
                 <img src="../images/svgs/rajce.svg" alt="social_icons" />
               </a>
             </div>
           </div>
           <div class="flex flex-wrap md:space-x-9 2xl:space-x-36">
             <div class="w-1/2 flex flex-col space-y-4 mb-9 md:mb-0 md:w-max">
-              <h5
-                class="
-                  text-sm
-                  font-bold
-                  transition-colors
-                  hover:text-club_yellow
-                "
-              >
+              <h5 class="text-sm font-bold hover_yellow">
                 <a href="#">Novinky</a>
               </h5>
-              <h5
-                class="
-                  text-sm
-                  font-bold
-                  transition-colors
-                  hover:text-club_yellow
-                "
-              >
+              <h5 class="text-sm font-bold hover_yellow">
                 <a href="#">Foto</a>
               </h5>
-              <h5
-                class="
-                  text-sm
-                  font-bold
-                  transition-colors
-                  hover:text-club_yellow
-                "
-              >
+              <h5 class="text-sm font-bold hover_yellow">
                 <a href="#">Klub</a>
               </h5>
-              <h5
-                class="
-                  text-sm
-                  font-bold
-                  transition-colors
-                  hover:text-club_yellow
-                "
-              >
+              <h5 class="text-sm font-bold hover_yellow">
                 <a href="#">Partneři</a>
               </h5>
-              <h5
-                class="
-                  text-sm
-                  font-bold
-                  transition-colors
-                  hover:text-club_yellow
-                "
-              >
+              <h5 class="text-sm font-bold hover_yellow">
                 <a href="#">Nábor</a>
               </h5>
             </div>
             <div class="w-1/2 md:w-max">
               <h5 class="text-sm font-bold mb-4">Muži</h5>
               <ul class="flex flex-col space-y-2">
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">A-tým</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">B-tým</a>
                 </li>
               </ul>
@@ -1021,28 +736,28 @@
             <div class="w-1/2 md:w-max">
               <h5 class="text-sm font-bold mb-4">Mládež</h5>
               <ul class="flex flex-col space-y-2">
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Dorost</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Starší žáci</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Mladší žáci</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Přípravka 2010</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Přípravka 2011</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Přípravka 2012</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Přípravka 2013</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Přípravka 2014 a ml.</a>
                 </li>
               </ul>
@@ -1050,13 +765,13 @@
             <div class="w-1/2 md:w-max">
               <h5 class="text-sm font-bold mb-4">Ženy</h5>
               <ul class="flex flex-col space-y-2">
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Juniorky</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Mladší žákyně</a>
                 </li>
-                <li class="text-sm transition-colors hover:text-club_yellow">
+                <li class="text-sm hover_yellow">
                   <a href="#">Dívky</a>
                 </li>
               </ul>
@@ -1065,7 +780,7 @@
         </div>
         <!-- Row 1 -->
         <!-- Row 2 -->
-        <div class="z-10 relative lg:flex lg:justify-between lg:items-center">
+        <div class="footer_row2">
           <p class="text-sm mb-4 lg:mb-0">
             © Hokejbalový klub SK Kelti 2008 z.s., 2021. Všechna práva vyhrazena
           </p>

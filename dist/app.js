@@ -7,7 +7,7 @@ burgerMenu.addEventListener("click", () => {
 });
 
 if (window.innerWidth < 1024) {
-  const navLinks = document.querySelectorAll(".nav__link > a");
+  const navLinks = document.querySelectorAll(".nav_link > a");
   const dropdownMenus = document.querySelectorAll(".dropdown_menu");
 
   navLinks.forEach((link) => {
@@ -69,29 +69,45 @@ const articlesContainer = document.querySelector(".archive_clanky_container");
 const articleContainerContent =
   document.querySelector(".clanek_container").innerHTML;
 
-showArticlesBtn.addEventListener("click", () => {
-  const article = document.createElement("div");
-  article.className = "clanek_container";
-  article.innerHTML += articleContainerContent;
-  articlesContainer.appendChild(article);
-  articlesContainer.appendChild(article.cloneNode(true));
-});
+if (showArticlesBtn) {
+  showArticlesBtn.addEventListener("click", () => {
+    const article = document.createElement("div");
+    article.className = "clanek_container";
+    article.innerHTML += articleContainerContent;
+    articlesContainer.appendChild(article);
+    articlesContainer.appendChild(article.cloneNode(true));
+  });
+}
 // SHOW MORE ARTICLES BUTTON - END
 
 // SCROLL UP BTN - START
 const scrollUpBtn = document.querySelector(".scroll_up");
 
-if (scrollUpBtn) scrollUpBtn.style.display = "none";
+if (scrollUpBtn) {
+  scrollUpBtn.style.display = "none";
 
-document.addEventListener("scroll", () => {
-  if (window.scrollY < 500) {
-    scrollUpBtn.style.display = "none";
-  } else {
-    scrollUpBtn.style.display = "block";
-  }
-});
+  document.addEventListener("scroll", () => {
+    if (window.scrollY < 500) {
+      scrollUpBtn.style.display = "none";
+    } else {
+      scrollUpBtn.style.display = "block";
+    }
+  });
 
-scrollUpBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+  scrollUpBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 // SCROLL UP BTN - END
+
+// SEARCH INPUT - START
+const searchBtn = document.querySelector(".search_btn");
+const searchInput = document.querySelector(".search_input");
+
+if (searchBtn) {
+  searchBtn.addEventListener("click", () => {
+    searchInput.classList.toggle("active");
+  });
+}
+// SEARCH INPUT - END
