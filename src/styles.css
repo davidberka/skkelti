@@ -981,6 +981,12 @@ video {
 .right-16 {
 	right: 4rem;
 }
+.bottom-4 {
+	bottom: 1rem;
+}
+.right-4 {
+	right: 1rem;
+}
 .z-50 {
 	z-index: 50;
 }
@@ -1940,6 +1946,14 @@ video {
 
 	.\32xl\:bottom-unset {
 		bottom: unset;
+	}
+
+	.\32xl\:bottom-16 {
+		bottom: 4rem;
+	}
+
+	.\32xl\:right-16 {
+		right: 4rem;
 	}
 
 	.\32xl\:mx-auto {
