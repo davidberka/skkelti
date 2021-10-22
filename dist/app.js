@@ -32,7 +32,11 @@ if (window.innerWidth < 1024) {
 const rosterFilters = document.querySelectorAll(".roster_filter");
 const allPositions = document.querySelectorAll(".roster_section");
 
-document.querySelector(".roster_filter[data-id='all']").classList.add("active");
+if (document.querySelector(".roster_filter[data-id='all']")) {
+  document
+    .querySelector(".roster_filter[data-id='all']")
+    .classList.add("active");
+}
 
 rosterFilters.forEach((filter) => {
   filter.addEventListener("click", function () {
