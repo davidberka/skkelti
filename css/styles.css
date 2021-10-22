@@ -25,6 +25,16 @@
     content: "";
     @apply hidden lg:block absolute -left-5 2xl:-left-10 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-club_yellow;
   }
+  .roster_filter {
+    @apply relative text-light_blue 2xl:text-lg hover:border-b hover:border-light_blue;
+  }
+  .roster_filter.active {
+    @apply border-b border-light_blue;
+  }
+  .roster_filter:not(:first-child)::before {
+    content: "";
+    @apply hidden lg:block absolute -left-5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-club_yellow;
+  }
   .clanek_container {
     @apply relative h-72 lg:h-80 w-full lg:w-5/6 flex items-end;
   }
