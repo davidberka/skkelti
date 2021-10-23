@@ -6,6 +6,24 @@
   body {
     @apply w-full font-body;
   }
+  h1 {
+    @apply text-article_title font-bold;
+  }
+  h2 {
+    @apply text-4xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  h4 {
+    @apply text-lg font-semibold;
+  }
+  h5 {
+    @apply text-base font-semibold;
+  }
+  p {
+    @apply text-base;
+  }
 }
 
 @layer components {
@@ -28,8 +46,8 @@
     @apply h-10 border-b border-b-dark_blue border-opacity-20;
   }
   .navigation {
-    transform: translateX(100%);
-    @apply fixed top-0 right-0 z-40 h-screen transition-transform duration-300 bg-dark_blue flex justify-center items-center w-2/3 md:w-96 flex-col space-y-16  lg:translate-x-0 lg:bg-transparent lg:h-1/2 lg:space-y-0 lg:flex-row lg:static  lg:w-max  lg:py-3;
+    transform: translateY(-100%);
+    @apply fixed top-0 right-0 z-40 pt-20 py-9 transition-transform duration-300 bg-dark_blue flex justify-center items-center w-full md:w-80 flex-col space-y-16  lg:translate-x-0 lg:bg-transparent lg:h-1/2 lg:space-y-0 lg:flex-row lg:static  lg:w-max  lg:py-3;
   }
   .navigation.menu_active {
     transform: translateX(0);
@@ -39,6 +57,9 @@
   }
   .dropdown_menu.active {
     @apply flex flex-col space-y-1;
+  }
+  .dropdown_menu li a {
+    @apply border-b border-club_yellow pb-1 lg:border-none lg:pb-0;
   }
   .burger {
     @apply p-3 cursor-pointer z-50 lg:hidden;

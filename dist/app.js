@@ -64,12 +64,13 @@ rosterFilters.forEach((filter) => {
 // ROSTER FILTERS - END
 
 // SHOW MORE ARTICLES BUTTON - START
-const showArticlesBtn = document.querySelector(".show_articles");
+const showArticlesBtn = document.querySelector(".show_articles.archive");
 const articlesContainer = document.querySelector(".archive_clanky_container");
-const articleContainerContent =
-  document.querySelector(".clanek_container").innerHTML;
 
 if (showArticlesBtn) {
+  const articleContainerContent =
+    document.querySelector(".clanek_container").innerHTML;
+
   showArticlesBtn.addEventListener("click", () => {
     const article = document.createElement("div");
     article.className = "clanek_container";
