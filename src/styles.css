@@ -2762,6 +2762,10 @@ video {
 		margin-right: calc(0.75rem * var(--tw-space-x-reverse));
 		margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 	}
+
+	.md\:pt-4 {
+		padding-top: 1rem;
+	}
 }
 @media (min-width: 1024px) {
 
