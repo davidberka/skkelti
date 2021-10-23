@@ -97,7 +97,7 @@
     @apply lg:w-5/6 2xl:w-11/12 3xl:w-3/4 lg:mx-auto;
   }
   .top_clanky_bg {
-    @apply hidden object-cover lg:block lg:absolute lg:w-1/2 2xl:w-2/3 lg:right-0 lg:bottom-0 2xl:bottom-unset;
+    @apply pointer-events-none hidden object-cover lg:block lg:absolute lg:w-1/2 2xl:w-2/3 lg:right-0 lg:bottom-0 2xl:bottom-unset;
   }
   .top_clanky_container {
     @apply flex flex-col md:flex-row md:grid md:grid-cols-2 md:gap-10 lg:gap-0 space-y-6 md:space-y-0 mb-8 lg:mb-0 2xl:pt-3;
@@ -152,7 +152,10 @@
     @apply absolute w-96 h-96 rounded-full left-1/2 -translate-x-1/2 -bottom-1/2 bg-light_blue bg-opacity-50 blur-3xl z-0;
   }
   .clanek_text p:first-child {
-    @apply 2xl:w-8/12;
+    @apply 2xl:w-8/12 mb-9 lg:w-full 2xl:mb-16;
+  }
+  .text_container p:first-child {
+    @apply lg:w-1/2;
   }
   .player_info h3 {
     @apply font-black text-xl mb-1 uppercase;
