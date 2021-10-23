@@ -199,7 +199,7 @@
     @apply flex md:flex-col md:w-72 2xl:w-72;
   }
   .match_aside {
-    @apply text-dark_blue flex flex-col space-y-6 md:w-3/4  lg:w-full lg:flex-row lg:flex-wrap lg:space-y-0 lg:gap-6 lg:mt-36 2xl:mt-52 2xl:content-start 2xl:h-max;
+    @apply text-dark_blue flex flex-col space-y-6 md:w-3/4  lg:w-full lg:flex-row lg:flex-wrap lg:space-y-0 lg:gap-6 lg:mt-36 2xl:mt-52 2xl:content-start 2xl:h-max 2xl:pl-5;
   }
   .match_aside_item {
     @apply border border-dark_blue p-4 2xl:p-6 lg:w-96;
