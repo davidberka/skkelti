@@ -7,22 +7,43 @@
     @apply w-full font-body;
   }
   h1 {
-    @apply text-article_title font-bold;
+    @apply text-4xl 2xl:text-article_title font-bold;
   }
   h2 {
-    @apply text-4xl font-bold;
+    @apply text-2xl 2xl:text-4xl font-bold;
   }
   h3 {
-    @apply text-2xl font-semibold;
+    @apply text-lg 2xl:text-2xl font-semibold;
   }
   h4 {
-    @apply text-lg font-semibold;
+    @apply text-base 2xl:text-lg font-semibold;
   }
   h5 {
     @apply text-base font-semibold;
   }
   p {
     @apply text-base;
+  }
+  img {
+    @apply max-w-full;
+  }
+  .report_text h1,
+  .report_text h2,
+  .report_text h3,
+  .report_text p,
+  .text_container h1,
+  .text_container h2,
+  .text_container h3,
+  .text_container p {
+    @apply mb-9 2xl:mb-16;
+  }
+  .report_text h4,
+  .report_text h5,
+  .report_text h6,
+  .text_container h4,
+  .text_container h5,
+  .text_container h6 {
+    @apply mb-2 2xl:mb-4;
   }
 }
 
@@ -151,7 +172,7 @@
     content: "";
     @apply absolute w-96 h-96 rounded-full left-1/2 -translate-x-1/2 -bottom-1/2 bg-light_blue bg-opacity-50 blur-3xl z-0;
   }
-  .clanek_text p:first-child {
+  .report_text p:first-child {
     @apply 2xl:w-8/12 mb-9 lg:w-full 2xl:mb-16;
   }
   .text_container p:first-child {
@@ -185,10 +206,10 @@
     @apply px-3 py-9 xl:py-20 2xl:pb-36 relative flex flex-col-reverse md:w-3/4  lg:flex-col lg:w-5/6 lg:mx-auto 3xl:w-3/4;
   }
   .text_container {
-    @apply flex flex-col space-y-9  2xl:space-y-16 lg:w-5/6 3xl:w-3/4 lg:mx-auto;
+    @apply lg:w-5/6 3xl:w-3/4 lg:mx-auto;
   }
   .text_container p:first-child,
-  .clanek_text p:first-child,
+  .report_text p:first-child,
   .match_text_container p:first-child {
     @apply first-letter:text-4xl  2xl:first-letter:text-article_title  first-letter:font-bold   first-letter:leading-extra-tight   first-letter:pr-2   first-letter:pt-2   2xl:first-letter:pt-0   first-letter:float-left;
   }
@@ -215,6 +236,12 @@
   }
   .search_input.active {
     @apply w-48 px-2 mr-1;
+  }
+  .citace {
+    @apply md:w-5/6 md:mx-auto;
+  }
+  .citace h2 {
+    @apply text-center text-2xl 2xl:text-4xl 2xl:max-w-4xl 2xl:mx-auto font-bold mb-2 2xl:mb-6 !important;
   }
 }
 @media only screen and (min-width: 1536px) {
@@ -268,6 +295,10 @@
     align-self: end;
   }
 }
+
+@layer utilities {
+}
+
 @media only screen and (min-width: 1536px) {
   .archive_clanky_container {
     grid-auto-rows: 600px;
