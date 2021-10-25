@@ -243,6 +243,14 @@
   .citace h2 {
     @apply text-center text-2xl 2xl:text-4xl 2xl:max-w-4xl 2xl:mx-auto font-bold mb-2 2xl:mb-6 !important;
   }
+  .more_articles_title {
+    @apply font-bold text-xl 2xl:text-2xl 2xl:break-words mb-2 pb-2 2xl:mb-4 2xl:pb-4 border-b border-b-light_blue;
+  }
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @media only screen and (min-width: 1536px) {
   .player_photos {

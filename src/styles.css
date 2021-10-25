@@ -2265,6 +2265,35 @@ video {
 		line-height: 2.5rem !important;
 	}
 }
+.more_articles_title {
+	margin-bottom: 0.5rem;
+	border-bottom-width: 1px;
+	--tw-border-opacity: 1;
+	border-bottom-color: rgba(0, 87, 184, var(--tw-border-opacity));
+	padding-bottom: 0.5rem;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 700;
+}
+@media (min-width: 1536px) {
+
+	.more_articles_title {
+		margin-bottom: 1rem;
+	}
+
+	.more_articles_title {
+		overflow-wrap: break-word;
+	}
+
+	.more_articles_title {
+		padding-bottom: 1rem;
+	}
+
+	.more_articles_title {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+}
 .pointer-events-none {
 	pointer-events: none;
 }
@@ -2320,6 +2349,12 @@ video {
 }
 .mt-4 {
 	margin-top: 1rem;
+}
+.mr-4 {
+	margin-right: 1rem;
+}
+.mr-5 {
+	margin-right: 1.25rem;
 }
 .flex {
 	display: flex;
@@ -2481,11 +2516,6 @@ video {
 	margin-right: calc(1rem * var(--tw-space-x-reverse));
 	margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.truncate {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
 .rounded {
 	border-radius: 0.25rem;
 }
@@ -2508,10 +2538,6 @@ video {
 .border-r-club_white {
 	--tw-border-opacity: 1;
 	border-right-color: rgba(233, 233, 234, var(--tw-border-opacity));
-}
-.border-b-light_blue {
-	--tw-border-opacity: 1;
-	border-bottom-color: rgba(0, 87, 184, var(--tw-border-opacity));
 }
 .border-b-dark_blue {
 	--tw-border-opacity: 1;
@@ -2639,6 +2665,11 @@ video {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
 }
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 @media only screen and (min-width: 1536px) {
   .player_photos {
     grid-template-columns: 0.5fr 0.5fr 1fr;
@@ -2740,6 +2771,10 @@ video {
 
 	.md\:mb-0 {
 		margin-bottom: 0px;
+	}
+
+	.md\:mr-0 {
+		margin-right: 0px;
 	}
 
 	.md\:h-48 {
@@ -3133,10 +3168,6 @@ video {
 		align-self: flex-end;
 	}
 
-	.\32xl\:break-words {
-		overflow-wrap: break-word;
-	}
-
 	.\32xl\:p-6 {
 		padding: 1.5rem;
 	}
@@ -3148,10 +3179,6 @@ video {
 
 	.\32xl\:pt-6 {
 		padding-top: 1.5rem;
-	}
-
-	.\32xl\:pb-4 {
-		padding-bottom: 1rem;
 	}
 
 	.\32xl\:text-4xl {

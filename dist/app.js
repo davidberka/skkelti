@@ -112,3 +112,25 @@ if (searchBtn) {
   });
 }
 // SEARCH INPUT - END
+
+// TRUNCATE - START
+
+const articleTitles = document.querySelectorAll(".truncate_title");
+
+function truncateTitle() {
+  let titleLength = 60;
+  articleTitles.forEach((title) => {
+    if (window.innerWidth <= 425) {
+      title.classList.add("truncate");
+    }
+    if (title.textContent.length > titleLength) {
+      const truncated = title.textContent.substr(0, titleLength) + "...";
+      title.textContent = truncated;
+    } else {
+      title.textContent;
+    }
+  });
+}
+
+truncateTitle();
+// TRUNCATE - END
