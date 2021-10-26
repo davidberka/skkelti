@@ -27,19 +27,23 @@
   img {
     @apply max-w-full;
   }
-  .report_text h1,
-  .report_text h2,
-  .report_text h3,
-  .report_text p,
+  .match_text h1,
+  .match_text h2,
+  .match_text h3,
   .text_container h1,
   .text_container h2,
   .text_container h3,
-  .text_container p {
+   {
     @apply mb-9 2xl:mb-16;
   }
-  .report_text h4,
-  .report_text h5,
-  .report_text h6,
+
+  .match_text p, .text_container p {
+    @apply mb-4 2xl:mb-8;
+  }
+
+  .match_text h4,
+  .match_text h5,
+  .match_text h6,
   .text_container h4,
   .text_container h5,
   .text_container h6 {
@@ -172,12 +176,12 @@
     content: "";
     @apply absolute w-96 h-96 rounded-full left-1/2 -translate-x-1/2 -bottom-1/2 bg-light_blue bg-opacity-50 blur-3xl z-0;
   }
-  .report_text p:first-child {
-    @apply 2xl:w-8/12 mb-9 lg:w-full 2xl:mb-16;
+  /* .match_text p:first-child {
+    @apply lg:w-full;
   }
   .text_container p:first-child {
     @apply lg:w-1/2;
-  }
+  } */
   .player_info h3 {
     @apply font-black text-xl mb-1 uppercase;
   }
@@ -209,7 +213,7 @@
     @apply lg:w-5/6 3xl:w-3/4 lg:mx-auto;
   }
   .text_container p:first-child,
-  .report_text p:first-child,
+  .match_text p:first-child,
   .match_text_container p:first-child {
     @apply first-letter:text-4xl  2xl:first-letter:text-article_title  first-letter:font-bold   first-letter:leading-extra-tight   first-letter:pr-2   first-letter:pt-2   2xl:first-letter:pt-0   first-letter:float-left;
   }

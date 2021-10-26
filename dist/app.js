@@ -114,7 +114,6 @@ if (searchBtn) {
 // SEARCH INPUT - END
 
 // TRUNCATE - START
-
 const articleTitles = document.querySelectorAll(".truncate_title");
 
 function truncateTitle() {
@@ -134,3 +133,20 @@ function truncateTitle() {
 
 truncateTitle();
 // TRUNCATE - END
+
+// CHECK DISTANCE FROM THE TOP - P ELEMENT - START
+function checkDistanceFromTop(container, page) {
+  const paragraphps = document.querySelectorAll(`${container}.ofTop_check p`);
+  let pWidth = '';
+  page === 'article' ? pWidth = '50%' : page === 'match' ? pWidth = '66.666667%' : pWidth = '0';
+  paragraphps.forEach(paragraph => {
+    const heightOfTheTop = paragraph.getBoundingClientRect().top + window.scrollY;
+    if (heightOfTheTop < 900 && window.innerWidth >= 1024) {
+      paragraph.style.width = pWidth;
+    }
+  })
+}
+
+checkDistanceFromTop('.text_container', 'article');
+checkDistanceFromTop('.match_text', 'match');
+// CHECK DISTANCE FROM THE TOP - P ELEMENT - END
