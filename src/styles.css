@@ -697,6 +697,20 @@ video {
 		margin-bottom: 1rem;
 	}
 }
+  table {
+    /* @apply overflow-x-scroll w-full table-fixed; */
+  }
+  table tr {
+	border-bottom-width: 1px;
+	--tw-border-opacity: 1;
+	border-color: rgba(7, 18, 46, var(--tw-border-opacity));
+}
+  table tr:nth-child(1) {
+	--tw-bg-opacity: 1;
+	background-color: rgba(7, 18, 46, var(--tw-bg-opacity));
+	--tw-text-opacity: 1;
+	color: rgba(233, 233, 234, var(--tw-text-opacity));
+}
 .header {
 	position: relative;
 	z-index: 50;
@@ -2288,6 +2302,49 @@ video {
 		line-height: 2rem;
 	}
 }
+.statistics {
+	--tw-bg-opacity: 1;
+	background-color: rgba(233, 233, 234, var(--tw-bg-opacity));
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	padding-top: 2.25rem;
+	padding-bottom: 2.25rem;
+	--tw-text-opacity: 1;
+	color: rgba(7, 18, 46, var(--tw-text-opacity));
+}
+@media (min-width: 1536px) {
+
+	.statistics {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+}
+.statistics_table tr th:nth-child(1), .statistics_table tr td:nth-child(1), .statistics_table tr th:nth-child(n+3), .statistics_table tr td:nth-child(n+3) {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-align: center;
+}
+.statistics_table tr th:nth-child(2), .statistics_table tr td:nth-child(2) {
+	white-space: nowrap;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-align: left;
+}
+@media (min-width: 1536px) {
+
+	.statistics_table.infield_players tr th:nth-child(2), .statistics_table.infield_players tr td:nth-child(2) {
+		padding-right: 9rem;
+	}
+
+	.statistics_table.infield_players tr th:nth-child(n+3), .statistics_table.infield_players tr td:nth-child(n+3) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
 .pointer-events-none {
 	pointer-events: none;
 }
@@ -2506,6 +2563,9 @@ video {
 	--tw-space-x-reverse: 0;
 	margin-right: calc(1rem * var(--tw-space-x-reverse));
 	margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.overflow-x-scroll {
+	overflow-x: scroll;
 }
 .rounded {
 	border-radius: 0.25rem;
@@ -3153,6 +3213,12 @@ video {
 		--tw-space-y-reverse: 0;
 		margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
 		margin-bottom: calc(0px * var(--tw-space-y-reverse));
+	}
+
+	.\32xl\:space-y-9 > :not([hidden]) ~ :not([hidden]) {
+		--tw-space-y-reverse: 0;
+		margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+		margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 	}
 
 	.\32xl\:self-end {
