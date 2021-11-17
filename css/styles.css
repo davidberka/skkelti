@@ -49,11 +49,11 @@
   .text_container h6 {
     @apply mb-2 2xl:mb-4;
   }
-  table {
-    /* @apply overflow-x-scroll w-full table-fixed; */
-  }
   table tr {
     @apply border-b border-dark_blue;
+  }
+  table tr td {
+    @apply whitespace-nowrap;
   }
   table tr:nth-child(1) {
     @apply bg-dark_blue text-club_white;
@@ -259,22 +259,33 @@
   .more_articles_title {
     @apply font-bold text-xl 2xl:text-2xl 2xl:break-words mb-2 pb-2 2xl:mb-4 2xl:pb-4 border-b border-b-light_blue;
   }
-  .statistics {
+  .statistics, .standings {
     @apply bg-club_white px-3 py-9 2xl:py-16 text-dark_blue;
   }
   .statistics_table tr th:nth-child(1), .statistics_table tr td:nth-child(1),
-  .statistics_table tr th:nth-child(n+3), .statistics_table tr td:nth-child(n+3)
+  .statistics_table tr th:nth-child(n+3), .statistics_table tr td:nth-child(n+3),
+  .standings_table tr th:nth-child(1), .standings_table tr td:nth-child(1),
+  .standings_table tr th:nth-child(n+3), .standings_table tr td:nth-child(n+3)
   {
-    @apply px-4 py-2 text-center;
+    @apply px-4 2xl:px-8 py-2 text-center;
   }
-  .statistics_table tr th:nth-child(2), .statistics_table tr td:nth-child(2) {
-    @apply px-4 py-2 whitespace-nowrap text-left;
+  .statistics_table tr th:nth-child(2), .statistics_table tr td:nth-child(2),
+  .standings_table tr th:nth-child(2), .standings_table tr td:nth-child(2)
+  {
+    @apply px-4 2xl:pr-14 py-2 text-left;
   }
-  .statistics_table.infield_players tr th:nth-child(2), .statistics_table.infield_players tr td:nth-child(2) {
-    @apply 2xl:pr-36;
+  .statistics_table.infield_players tr th:nth-child(2), .statistics_table.infield_players tr td:nth-child(2),
+  .standings_table tr th:nth-child(2), .standings_table tr td:nth-child(2) 
+  {
+    @apply 2xl:pr-16;
   }
-  .statistics_table.infield_players tr th:nth-child(n+3), .statistics_table.infield_players tr td:nth-child(n+3) {
-    @apply 2xl:px-6;
+  .statistics_table.infield_players tr th:nth-child(n+3), .statistics_table.infield_players tr td:nth-child(n+3),
+  .standings_table tr th:nth-child(n+3), .standings_table tr td:nth-child(n+3) 
+  {
+    @apply 2xl:px-9;
+  }
+  .standings_table tr td:nth-child(2) {
+    @apply flex items-center;
   }
 }
 .truncate {
