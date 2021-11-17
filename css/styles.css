@@ -290,7 +290,17 @@
   .table_container {
     @apply overflow-x-scroll;
   }
-
+  .score_container {
+    @apply flex md:flex-col space-x-1 md:space-x-0 justify-center items-center md:w-125p;
+  }
+}
+@layer utilities {
+  .win {
+    @apply text-green-700;
+  } 
+  .lost {
+    @apply text-red-600;
+  } 
 }
 .truncate {
   overflow: hidden;
