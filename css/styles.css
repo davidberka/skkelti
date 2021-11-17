@@ -287,11 +287,24 @@
   .standings_table tr td:nth-child(2) {
     @apply flex items-center;
   }
+  .table_container {
+    @apply overflow-x-scroll;
+  }
+
 }
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+@media only screen and (min-width: 768px) {
+  .table_container::-webkit-scrollbar {
+    display: none;
+  }
+  .table_container {
+    -ms-overflow-style: none;   
+    scrollbar-width: none;
+  }
 }
 @media only screen and (min-width: 1536px) {
   .player_photos {
@@ -343,9 +356,6 @@
     justify-self: start;
     align-self: end;
   }
-}
-
-@layer utilities {
 }
 
 @media only screen and (min-width: 1536px) {
