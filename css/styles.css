@@ -293,6 +293,18 @@
   .score_container {
     @apply flex md:flex-col space-x-1 md:space-x-0 justify-center items-center md:w-125p;
   }
+  .second_nav_link:hover .second_dropdown_menu {
+    @apply lg:flex lg:flex-col lg:space-y-1;
+  } 
+  .second_dropdown_menu {
+    @apply hidden lg:absolute lg:left-full lg:-top-1 lg:p-3 lg:bg-light_blue lg:pl-5;
+  }
+  .second_dropdown_menu.active {
+    @apply flex flex-col;
+  }
+  .second_dropdown_menu li a {
+    @apply border-light_blue;
+  }
 }
 @layer utilities {
   .win {

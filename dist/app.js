@@ -8,12 +8,30 @@ burgerMenu.addEventListener("click", () => {
 
 if (window.innerWidth < 1024) {
   const navLinks = document.querySelectorAll(".nav_link > a");
+  const secondNavLinks = document.querySelectorAll(".second_nav_link > a");
   const dropdownMenus = document.querySelectorAll(".dropdown_menu");
+  const secondDropdownMenus = document.querySelectorAll(".second_dropdown_menu");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       // remove active className
       dropdownMenus.forEach((menu) => {
+        if (link.parentNode != menu.parentNode) {
+          menu.classList.remove("active");
+        }
+      });
+      // add active className to current dropdown
+      const dropdownMenu = link.nextElementSibling;
+      if (dropdownMenu) {
+        dropdownMenu.classList.toggle("active");
+      }
+    });
+  });
+
+  secondNavLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      // remove active className
+      secondDropdownMenus.forEach((menu) => {
         if (link.parentNode != menu.parentNode) {
           menu.classList.remove("active");
         }
