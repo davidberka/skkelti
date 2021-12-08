@@ -62,7 +62,7 @@
 
 @layer components {
   .header {
-    @apply z-50 relative w-full h-20 lg:h-26 px-3 bg-light_blue text-club_white border-b-2 2xl:border-b-4 border-club_white;
+    @apply z-50 relative w-full h-24 lg:h-28 px-3 bg-light_blue text-club_white border-b-2 2xl:border-b-4 border-club_white;
   }
   .header_container {
     @apply h-full w-full flex items-center justify-between lg:justify-start lg:w-11/12 lg:mx-auto 2xl:w-5/6 3xl:w-3/4;
@@ -103,7 +103,7 @@
   }
   .nav_link:not(:first-child)::before {
     content: "";
-    @apply hidden lg:block absolute -left-5 2xl:-left-10 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-club_yellow;
+    @apply hidden lg:block absolute -left-5 2xl:-left-10 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-black;
   }
   .roster_filter {
     @apply relative text-light_blue 2xl:text-lg hover:border-b hover:border-light_blue;
@@ -133,9 +133,6 @@
   .top_clanky_bg {
     @apply pointer-events-none hidden object-cover lg:block lg:absolute lg:w-1/2 2xl:w-2/3 lg:right-0 lg:bottom-0 2xl:bottom-unset;
   }
-  .top_clanky_container {
-    @apply flex flex-col md:flex-row md:grid md:grid-cols-2 md:gap-10 lg:gap-0 space-y-6 md:space-y-0 mb-8 lg:mb-0 2xl:pt-3;
-  }
   .top_clanky::before,
   .player_profile::before,
   .archive_clanky::before {
@@ -146,31 +143,28 @@
     @apply z-10 relative border border-club_white text-club_white text-sm rounded-full py-2 px-4 xl:py-4 xl:px-8 flex transition-all hover:scale-105 hover:shadow-xl items-center;
   }
   .social_section {
-    @apply bg-light_blue px-3 py-9 2xl:py-16;
+    @apply bg-club_white px-3 py-9 2xl:py-16;
   }
   .social_item {
-    @apply w-full bg-dark_blue  bg-opacity-20 py-8  2xl:py-12  flex  items-center  justify-center backdrop-filter backdrop-blur-sm;
+    @apply w-full bg-gray-300 py-8 2xl:py-12 flex  items-center  justify-center backdrop-filter backdrop-blur-sm;
   }
   .multi_section {
     @apply bg-club_white px-3 py-9 2xl:py-16;
   }
   .multi_section_row1 {
-    @apply flex flex-col md:flex-wrap md:flex-row space-y-9 md:space-y-0 md:gap-x-4 md:gap-y-6  pb-9 2xl:pb-16 border-b border-b-dark_blue border-opacity-20;
+    @apply flex flex-col md:flex-wrap md:flex-row space-y-9 md:space-y-0 md:gap-y-6 py-9 px-3 md:pt-0 2xl:pb-16 border-b border-b-dark_blue border-opacity-20;
   }
   .multi_section_clanek {
-    @apply flex md:flex-col md:w-72 2xl:w-106;
+    @apply flex md:flex-col md:w-64 2xl:w-79 3xl:w-88;
   }
   .multi_section_clanek_title {
-    @apply text-dark_blue font-bold text-2xl  2xl:text-4xl 2xl:break-words  mb-2  pb-2  2xl:mb-4 2xl:pb-4 border-b  border-b-light_blue;
+    @apply text-white font-bold text-xl 2xl:text-2xl 2xl:break-words  mb-2  pb-2  2xl:mb-4 2xl:pb-4 border-b  border-b-white border-opacity-20;
   }
   .multi_section_row2 {
-    @apply text-dark_blue py-9 2xl:py-16  flex flex-col  lg:flex-row  space-y-9  lg:space-y-0 lg:w-5/6 lg:mx-auto  2xl:space-x-9  3xl:w-3/4;
+    @apply text-dark_blue py-9 2xl:py-16  flex flex-col  lg:flex-row  space-y-9  lg:space-y-0  2xl:space-x-9;
   }
   .foto_item {
     @apply object-cover absolute mx-auto inset-0 w-5/6 h-full;
-  }
-  .partneri_section {
-    @apply lg:w-5/6 3xl:w-3/4 lg:mx-auto;
   }
   .footer {
     @apply relative overflow-y-hidden text-club_white  bg-dark_blue px-3 py-9 2xl:py-16;
@@ -305,6 +299,35 @@
   .second_dropdown_menu li a {
     @apply border-light_blue;
   }
+  .top_clanek_container {
+    @apply relative h-64;
+  }
+  .top_clanek_container:nth-child(1) {
+    @apply h-64;
+  }
+  .top_clanek_container::before {
+    content: "";
+    @apply absolute inset-0 w-full h-full bg-gradient-to-t from-black to-transparent z-10 opacity-60;
+  }
+  .article:nth-child(1) {
+      @apply lg:h-full lg:row-span-2;
+  }
+  .article:nth-child(1) h3 {
+     @apply text-xl 2xl:text-4xl;
+  }
+  .article .top_article_span {
+      @apply 2xl:px-4;
+  }
+  .article:nth-child(1) .top_article_span {
+      @apply 2xl:px-6;    
+  }
+  .article::before {
+      content: "";
+      @apply absolute hover:hidden inset-0 h-full w-full z-10 bg-gradient-to-t from-gray-900 to-transparent;
+  }
+  .stretched_link {
+    @apply absolute inset-0 w-full h-full z-30;
+  }
 }
 @layer utilities {
   .win {
@@ -382,33 +405,6 @@
 
 @media only screen and (min-width: 1536px) {
   .archive_clanky_container {
-    grid-auto-rows: 600px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .top_clanky_container {
-    grid-auto-rows: 480px;
-  }
-  .top_clanky_container .clanek_container:nth-child(1),
-  .top_clanky_container .clanek_container:nth-child(5n) {
-    justify-self: end;
-  }
-  .top_clanky_container .clanek_container:nth-child(4n + 2) {
-    justify-self: end;
-    align-self: end;
-  }
-  .top_clanky_container .clanek_container:nth-child(4n + 3) {
-    justify-self: start;
-    align-self: start;
-  }
-  .top_clanky_container .clanek_container:nth-child(4n + 4) {
-    justify-self: start;
-    align-self: end;
-  }
-}
-@media only screen and (min-width: 1536px) {
-  .top_clanky_container {
     grid-auto-rows: 600px;
   }
 }

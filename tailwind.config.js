@@ -9,6 +9,7 @@ module.exports = {
         dark_blue: "#07122E",
         club_white: "#E9E9EA",
         club_yellow: "#B88400",
+        fb: "#4267B2",
       },
       fontFamily: {
         body: ['"Inter"', "sans-serif"],
@@ -30,6 +31,8 @@ module.exports = {
         max: "max-content",
       },
       width: {
+        79: "19.6rem",
+        88: "22.2rem",
         106: "410px",
         150: "620px",
         200: "850px",
@@ -41,6 +44,9 @@ module.exports = {
       screens: {
         "3xl": "1920px",
       },
+      gridTemplateColumns: {
+        "top-articles": "1.3fr 0.7fr"
+      }
     },
   },
   variants: {

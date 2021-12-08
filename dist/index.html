@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="header_container">
-        <div class="h-5/6 lg:mr-6 scale_transform">
+        <div class="h-24 lg:h-32 lg:w-32 lg:object-contain mt-3 lg:mt-6 lg:mr-8 scale_transform">
           <a href="index.html">
             <img
               class="w-full h-full object-contain"
@@ -28,7 +28,10 @@
         <div class="lg:w-full">
           <!-- ROW 1 -->
           <div class="header_row1">
-            <h2 class="font-black text-2xl">SK KELTI 2008</h2>
+            <div class="flex items-baseline">
+              <h2 class="font-black text-3xl mt-1 mr-2">SK KELTI 2008</h2>
+              <span class="italic">,,Hokejbalový klub,,</span>
+            </div>
             <div class="flex">
               <div
                 class="
@@ -181,108 +184,34 @@
     </header>
     <main>
       <!-- TOP ARTICLES -->
-      <section class="top_clanky">
-        <div class="top_clanky_inner">
-          <img loading="lazy" class="top_clanky_bg" src="../images/bg.png" alt="" />
-          <div class="top_clanky_container">
-            <div class="clanek_container">
-              <div class="clanek_overlay"></div>
-              <img
-                class="clanek_img"
-                src="../images/clanek_photo3.png"
-                alt="clanek_img"
-              />
-              <div class="relative z-30 text-club_white p-3">
-                <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
-                  <span class="bg-light_blue rounded-full text-sm py-1 px-4"
-                    >Muži</span
-                  >
-                  <span class="text-sm">12.8.2021</span>
-                </div>
-                <h1 class="font-bold text-2xl 2xl:text-4xl mb-2 pb-2">
-                  Kelti v poháru končí. Zápasy na Palmovce body nepřinesly.
-                </h1>
-                <a href="article.html" class="text-sm hover_yellow"
-                  >číst více</a
-                >
+      <section class="bg-dark_blue text-white">
+        <div class="md:px-3 md:py-8  2xl:py-10 flex flex-col md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-top-articles xl:w-5/6 xl:mx-auto 2xl:gap-6 3xl:w-3/4">
+          <div class="article overflow-hidden group relative flex items-end h-64 2xl:h-80">
+              <img class="absolute transition-transform duration-300 group-hover:scale-105 h-full w-full inset-0 object-cover" src="../images/clanek_photo1.png" alt="clanek-bg">
+              <div class="z-20 relative p-3 xl:p-9">
+                <span class="top_article_span bg-light_blue p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
+                <h3 class="mt-2 2xl:mt-4 group-hover:underline">DRUHÝ DOMÁCÍ ZÁPAS OPĚT BEZ BODŮ, VLCI VYLOUPILI DĚČÍNSKÝ LED</h3>
               </div>
-            </div>
-            <div class="clanek_container">
-              <div class="clanek_overlay"></div>
-              <img
-                class="clanek_img"
-                src="../images/clanek_photo2.png"
-                alt="clanek_img"
-              />
-              <div class="relative z-30 text-club_white p-3">
-                <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
-                  <span class="bg-club_yellow rounded-full text-sm py-1 px-3"
-                    >Juniorka</span
-                  >
-                  <span class="text-sm">12.8.2021</span>
-                </div>
-                <h1 class="font-bold text-2xl 2xl:text-4xl mb-2 pb-2">
-                  Ženy zakončily sezónu na pátém místě
-                </h1>
-                <a href="article.html" class="text-sm hover_yellow"
-                  >číst více</a
-                >
-              </div>
-            </div>
-            <div class="clanek_container">
-              <div class="clanek_overlay"></div>
-              <img
-                class="clanek_img"
-                src="../images/clanek_photo1.png"
-                alt="clanek_img"
-              />
-              <div class="relative z-30 text-club_white p-3">
-                <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
-                  <span class="bg-light_blue rounded-full text-sm py-1 px-4"
-                    >Muži</span
-                  >
-                  <span class="text-sm">12.8.2021</span>
-                </div>
-                <h1 class="font-bold text-2xl 2xl:text-4xl mb-2 pb-2">
-                  Ženy zakončily sezónu na pátém místě
-                </h1>
-                <a href="article.html" class="text-sm hover_yellow"
-                  >číst více</a
-                >
-              </div>
-            </div>
-            <div class="clanek_container">
-              <div class="clanek_overlay"></div>
-              <img
-                class="clanek_img"
-                src="../images/clanek_photo4.png"
-                alt="clanek_img"
-              />
-              <div class="relative z-30 text-club_white p-3">
-                <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
-                  <span class="bg-light_blue rounded-full text-sm py-1 px-4"
-                    >Muži</span
-                  >
-                  <span class="text-sm">12.8.2021</span>
-                </div>
-                <h1 class="font-bold text-2xl 2xl:text-4xl mb-2 pb-2">
-                  Starší žáci v zápasových zkouškách uspěli
-                </h1>
-                <a href="article.html" class="text-sm hover_yellow"
-                  >číst více</a
-                >
-              </div>
-            </div>
+              <a class="stretched_link" href="article.html"></a>
           </div>
-
-          <div class="w-full flex justify-center mt-9 lg:mt-12 2xl:mt-24">
-            <a href="archive.html" class="article_btn">
-              Zobrazit další články
-              <img loading="lazy" class="ml-4" src="../images/svgs/arrow_right.svg" alt="" />
-            </a>
+          <div class="article overflow-hidden group relative flex items-end h-64 2xl:h-80">
+              <img class="absolute transition-transform duration-300 group-hover:scale-105 h-full w-full inset-0 object-cover" src="../images/clanek_photo1.png" alt="clanek-bg">
+              <div class="z-20 relative p-3 xl:p-9">
+                <span class="top_article_span bg-light_blue p-2 text-sm rounded font-bold bg-main-red">18.9.2021</span>
+                <h3 class="mt-2 2xl:mt-4 group-hover:underline">DRUHÝ DOMÁCÍ ZÁPAS OPĚT BEZ BODŮ, VLCI VYLOUPILI DĚČÍNSKÝ LED</h3>
+              </div>
+              <a class="stretched_link" href="article.html"></a>
+          </div>
+          <div class="article overflow-hidden group relative flex items-end h-64 2xl:h-80">
+              <img class="absolute transition-transform duration-300 group-hover:scale-105 h-full w-full inset-0 object-cover" src="../images/clanek_photo1.png" alt="clanek-bg">
+              <div class="z-20 relative p-3 xl:p-9">
+                <span class="top_article_span bg-light_blue p-2 text-sm rounded font-bold">18.9.2021</span>
+                <h3 class="mt-2 2xl:mt-4 group-hover:underline">DRUHÝ DOMÁCÍ ZÁPAS OPĚT BEZ BODŮ, VLCI VYLOUPILI DĚČÍNSKÝ LED</h3>
+              </div>
+              <a class="stretched_link" href="article.html"></a>
           </div>
         </div>
-      </section>
+      </section> 
       <!-- TOP ARTICLES-->
       <section class="social_section">
         <div class="lg:w-5/6 3xl:w-3/4 lg:mx-auto">
@@ -297,25 +226,25 @@
             <div class="social_item">
               <div class="flex flex-col items-center">
                 <img loading="lazy" src="../images/svgs/fb.svg" alt="" />
-                <h5 class="text-club_white text-sm mt-2">Facebook</h5>
+                <h5 class="text-dark_blue text-sm mt-2">Facebook</h5>
               </div>
             </div>
             <div class="social_item">
               <div class="flex flex-col items-center">
                 <img loading="lazy" src="../images/svgs/yt.svg" alt="" />
-                <h5 class="text-club_white text-sm mt-2">Youtube</h5>
+                <h5 class="text-dark_blue text-sm mt-2">Youtube</h5>
               </div>
             </div>
             <div class="social_item">
               <div class="flex flex-col items-center">
                 <img loading="lazy" src="../images/svgs/ig.svg" alt="" />
-                <h5 class="text-club_white text-sm mt-2">Instagram</h5>
+                <h5 class="text-dark_blue text-sm mt-2">Instagram</h5>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="multi_section">
+      <section class="bg-light_blue">
         <div class="lg:w-5/6 3xl:w-3/4 lg:mx-auto">
           <!-- Clanky -->
           <div class="multi_section_row1">
@@ -327,11 +256,11 @@
                   alt="clanek_img"
                 />
               </div>
-              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
+              <div class="w-2/3 md:w-full px-3 md:pt-4 2xl:pt-6">
                 <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
                   <span
                     class="
-                      bg-light_blue
+                      bg-black
                       text-club_white
                       rounded-full
                       text-sm
@@ -340,15 +269,15 @@
                     "
                     >Muži</span
                   >
-                  <span class="text-dark_blue text-sm">12.8.2021</span>
+                  <span class="text-white text-sm">12.8.2021</span>
                 </div>
-                <h1 class="multi_section_clanek_title truncate_title">
+                <h3 class="multi_section_clanek_title truncate_title">
                   Starší žáci v zápasových zkouškách uspěli
-                </h1>
+                </h3>
                 <a
                   href="article.html"
                   class="
-                    text-dark_blue
+                    text-white
                     text-sm
                     transition-colors
                     hover:text-club_yellow
@@ -365,11 +294,11 @@
                   alt="clanek_img"
                 />
               </div>
-              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
+              <div class="w-2/3 md:w-full px-3 md:pt-4 2xl:pt-6">
                 <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
                   <span
                     class="
-                      bg-light_blue
+                      bg-black
                       text-club_white
                       rounded-full
                       text-sm
@@ -378,15 +307,15 @@
                     "
                     >Muži</span
                   >
-                  <span class="text-dark_blue text-sm">12.8.2021</span>
+                  <span class="text-white text-sm">12.8.2021</span>
                 </div>
-                <h1 class="multi_section_clanek_title truncate_title">
+                <h3 class="multi_section_clanek_title truncate_title">
                   Starší žáci v zápasových zkouškách uspěli
-                </h1>
+                </h3>
                 <a
                   href="article.html"
                   class="
-                    text-dark_blue
+                    text-white
                     text-sm
                     transition-colors
                     hover:text-club_yellow
@@ -403,11 +332,11 @@
                   alt="clanek_img"
                 />
               </div>
-              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
+              <div class="w-2/3 md:w-full px-3 md:pt-4 2xl:pt-6">
                 <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
                   <span
                     class="
-                      bg-light_blue
+                      bg-black
                       text-club_white
                       rounded-full
                       text-sm
@@ -416,15 +345,15 @@
                     "
                     >Muži</span
                   >
-                  <span class="text-dark_blue text-sm">12.8.2021</span>
+                  <span class="text-white text-sm">12.8.2021</span>
                 </div>
-                <h1 class="multi_section_clanek_title truncate_title">
+                <h3 class="multi_section_clanek_title truncate_title">
                   Starší žáci v zápasových zkouškách uspěli
-                </h1>
+                </h3>
                 <a
                   href="article.html"
                   class="
-                    text-dark_blue
+                    text-white
                     text-sm
                     transition-colors
                     hover:text-club_yellow
@@ -441,11 +370,11 @@
                   alt="clanek_img"
                 />
               </div>
-              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
+              <div class="w-2/3 md:w-full px-3 md:pt-4 2xl:pt-6">
                 <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
                   <span
                     class="
-                      bg-light_blue
+                      bg-black
                       text-club_white
                       rounded-full
                       text-sm
@@ -454,91 +383,15 @@
                     "
                     >Muži</span
                   >
-                  <span class="text-dark_blue text-sm">12.8.2021</span>
+                  <span class="text-white text-sm">12.8.2021</span>
                 </div>
-                <h1 class="multi_section_clanek_title truncate_title">
+                <h3 class="multi_section_clanek_title truncate_title">
                   Starší žáci v zápasových zkouškách uspěli
-                </h1>
+                </h3>
                 <a
                   href="article.html"
                   class="
-                    text-dark_blue
-                    text-sm
-                    transition-colors
-                    hover:text-club_yellow
-                  "
-                  >číst více</a
-                >
-              </div>
-            </div>
-            <div class="multi_section_clanek">
-              <div class="w-1/3 md:w-full h-28 md:h-48 2xl:h-72 mr-5 md:mr-0">
-                <img
-                  class="w-full h-full object-cover"
-                  src="../images/clanek_photo2.png"
-                  alt="clanek_img"
-                />
-              </div>
-              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
-                <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
-                  <span
-                    class="
-                      bg-light_blue
-                      text-club_white
-                      rounded-full
-                      text-sm
-                      py-1
-                      px-4
-                    "
-                    >Muži</span
-                  >
-                  <span class="text-dark_blue text-sm">12.8.2021</span>
-                </div>
-                <h1 class="multi_section_clanek_title truncate_title">
-                  Starší žáci v zápasových zkouškách uspěli
-                </h1>
-                <a
-                  href="article.html"
-                  class="
-                    text-dark_blue
-                    text-sm
-                    transition-colors
-                    hover:text-club_yellow
-                  "
-                  >číst více</a
-                >
-              </div>
-            </div>
-            <div class="multi_section_clanek">
-              <div class="w-1/3 md:w-full h-28 md:h-48 2xl:h-72 mr-5 md:mr-0">
-                <img
-                  class="w-full h-full object-cover"
-                  src="../images/clanek_photo2.png"
-                  alt="clanek_img"
-                />
-              </div>
-              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
-                <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
-                  <span
-                    class="
-                      bg-light_blue
-                      text-club_white
-                      rounded-full
-                      text-sm
-                      py-1
-                      px-4
-                    "
-                    >Muži</span
-                  >
-                  <span class="text-dark_blue text-sm">12.8.2021</span>
-                </div>
-                <h1 class="multi_section_clanek_title truncate_title">
-                  Starší žáci v zápasových zkouškách uspěli
-                </h1>
-                <a
-                  href="article.html"
-                  class="
-                    text-dark_blue
+                    text-white
                     text-sm
                     transition-colors
                     hover:text-club_yellow
@@ -550,6 +403,10 @@
           </div>
         </div>
         <!-- Clanky -->
+        </div>
+      </section>
+      <section class="multi_section">
+        <div class="lg:w-5/6 3xl:w-3/4 lg:mx-auto">
         <!-- Novinky, Foto, Tabulka -->
         <div class="multi_section_row2">
           <!-- Novinky -->
@@ -782,7 +639,7 @@
         <div class="footer_row1">
           <div class="mb-9">
             <a href="index.html">
-              <img loading="lazy" class="scale_transform" src="../images/logo.png" alt="" />
+              <img loading="lazy" class="scale_transform w-20 h-20 object-containj" src="../images/logo.png" alt="" />
             </a>
             <p class="text-sm my-6">
               Hokejbalový klub SK Kelti 2008 z.s.<br />
