@@ -105,6 +105,13 @@
     content: "";
     @apply hidden lg:block absolute -left-5 2xl:-left-10 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-black;
   }
+  .submenu_link {
+    @apply relative text-lg font-semibold;
+  }
+  .submenu_link::before {
+    content: "";
+    @apply block absolute -left-5 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-black;
+  }
   .roster_filter {
     @apply relative text-light_blue 2xl:text-lg hover:border-b hover:border-light_blue;
   }
@@ -152,7 +159,7 @@
     @apply bg-club_white px-3 py-9 2xl:py-16;
   }
   .multi_section_row1 {
-    @apply flex flex-col md:flex-wrap md:flex-row space-y-9 md:space-y-0 md:gap-y-6 py-9 px-3 md:pt-0 2xl:pb-16 border-b border-b-dark_blue border-opacity-20;
+    @apply flex flex-col md:flex-wrap md:flex-row space-y-9 md:space-y-0 md:gap-y-6 md:justify-between py-9 px-3 md:pt-0 2xl:pb-16 border-b border-b-dark_blue border-opacity-20;
   }
   .multi_section_clanek {
     @apply flex md:flex-col md:w-64 2xl:w-79 3xl:w-88;
@@ -161,7 +168,7 @@
     @apply text-white font-bold text-xl 2xl:text-2xl 2xl:break-words  mb-2  pb-2  2xl:mb-4 2xl:pb-4 border-b  border-b-white border-opacity-20;
   }
   .multi_section_row2 {
-    @apply text-dark_blue py-9 2xl:py-16  flex flex-col  lg:flex-row  space-y-9  lg:space-y-0  2xl:space-x-9;
+    @apply text-dark_blue py-9 2xl:py-16  flex flex-col  lg:flex-row  space-y-9  lg:space-y-0 lg:gap-4  2xl:space-x-9;
   }
   .foto_item {
     @apply object-cover absolute mx-auto inset-0 w-5/6 h-full;

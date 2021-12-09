@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../src/styles.css" />
   </head>
   <body>
@@ -182,10 +184,83 @@
         </div>
       </div>
     </header>
+    <div class="bg-club_gray text-white">
+      <div class="flex items-center p-3 w-full lg:w-11/12 lg:mx-auto 2xl:w-5/6 3xl:w-3/4">
+        <h4 class="mr-4 border p-2 border-white border-opacity-20">Extraliga junioru</h4>
+        <div class="matches_slick flex overflow-x-hidden">
+          <div>
+            <div class="flex flex-col space-y-2 bg-club_gray py-2 px-8 border-r border-white border-opacity-20">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center mr-16 2xl:mr-24">
+                  <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                  <h3 class="text-base">Kelti</h3>
+                </div>
+                <h3 class="text-base">0</h3>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center mr-16 2xl:mr-24">
+                  <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                  <h3 class="text-base">Kelti</h3>
+                </div>
+                <h3 class="text-base">0</h3>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col space-y-2 bg-club_gray py-2 px-8 border-r border-white border-opacity-20">
+              <div class="flex items-center">
+                <div class="flex items-center mr-16 2xl:mr-24">
+                  <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                  <h3 class="text-base">Kelti</h3>
+                </div>
+                <h3 class="text-base">0</h3>
+              </div>
+              <div class="flex items-center">
+                <div class="flex items-center mr-16 2xl:mr-24">
+                  <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                  <h3 class="text-base">Kelti</h3>
+                </div>
+                <h3 class="text-base">0</h3>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center  bg-club_gray py-2 px-8 border-r border-white border-opacity-20">
+              <div class="flex flex-col space-y-2 mr-16 2xl:mr-24">
+                <div class="flex items-center">
+                  <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                  <h3 class="text-base">Kelti</h3>
+                </div>
+                <div class="flex items-center">
+                  <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                  <h3 class="text-base">Kelti</h3>
+                </div>
+              </div>
+              <h3 class="text-base text-right">20.9., 18:00</h3>
+            </div>
+          </div>   
+          <div>
+            <div class="flex items-center  bg-club_gray py-2 px-8 border-r border-white border-opacity-20">
+              <div class="flex flex-col space-y-2 mr-16 2xl:mr-24">
+                <div class="flex items-center">
+                  <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                  <h3 class="text-base">Kelti</h3>
+                </div>
+                <div class="flex items-center">
+                  <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                  <h3 class="text-base">Kelti</h3>
+                </div>
+              </div>
+              <h3 class="text-base text-right">20.9., 18:00</h3>
+            </div>
+          </div>   
+        </div> 
+      </div>
+    </div>
     <main>
       <!-- TOP ARTICLES -->
       <section class="bg-dark_blue text-white">
-        <div class="md:px-3 md:py-8  2xl:py-10 flex flex-col md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-top-articles xl:w-5/6 xl:mx-auto 2xl:gap-6 3xl:w-3/4">
+        <div class="md:px-3 md:py-8 2xl:py-10 flex flex-col md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-top-articles lg:w-11/12 lg:mx-auto 2xl:w-5/6 3xl:w-3/4 2xl:gap-6">
           <div class="article overflow-hidden group relative flex items-end h-64 2xl:h-80">
               <img class="absolute transition-transform duration-300 group-hover:scale-105 h-full w-full inset-0 object-cover" src="../images/clanek_photo1.png" alt="clanek-bg">
               <div class="z-20 relative p-3 xl:p-9">
@@ -256,7 +331,7 @@
                   alt="clanek_img"
                 />
               </div>
-              <div class="w-2/3 md:w-full px-3 md:pt-4 2xl:pt-6">
+              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
                 <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
                   <span
                     class="
@@ -294,7 +369,7 @@
                   alt="clanek_img"
                 />
               </div>
-              <div class="w-2/3 md:w-full px-3 md:pt-4 2xl:pt-6">
+              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
                 <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
                   <span
                     class="
@@ -332,7 +407,7 @@
                   alt="clanek_img"
                 />
               </div>
-              <div class="w-2/3 md:w-full px-3 md:pt-4 2xl:pt-6">
+              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
                 <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
                   <span
                     class="
@@ -370,7 +445,7 @@
                   alt="clanek_img"
                 />
               </div>
-              <div class="w-2/3 md:w-full px-3 md:pt-4 2xl:pt-6">
+              <div class="w-2/3 md:w-full md:pt-4 2xl:pt-6">
                 <div class="flex space-x-2 items-center mb-2 2xl:mb-4">
                   <span
                     class="
@@ -409,6 +484,128 @@
         <div class="lg:w-5/6 3xl:w-3/4 lg:mx-auto">
         <!-- Novinky, Foto, Tabulka -->
         <div class="multi_section_row2">
+        <!-- Tabulka -->
+                <div class="md:w-1/2">
+                  <div class="flex flex-col mb-4">
+                    <h1 class="font-bold text-2xl 2xl:text-4xl mb-4 2xl:mb-8">
+                      Tabulka
+                    </h1>
+                    <select
+                      class="w-1/4 cursor-pointer outline-none bg-club_white"
+                      name="category"
+                      id="category"
+                    >
+                      <option value="">Muži</option>
+                      <option value="">U19</option>
+                      <option value="">U18</option>
+                    </select>
+                  </div>
+                  <div>
+                    <table class="w-full table_container">
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
+                        </td>
+                        <td><strong>SK Kelti 2008</strong></td>
+                        <td>22</td>
+                        <td>41:22</td>
+                        <td><strong>54</strong></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+          <!-- Tabulka -->
           <!-- Novinky -->
           <div class="md:w-1/2">
             <h1 class="font-bold text-2xl 2xl:text-4xl mb-4 2xl:mb-8">
@@ -442,152 +639,57 @@
           <!-- Novinky -->
           <!-- Foto -->
           <div class="md:w-1/2">
-            <h1 class="font-bold text-2xl 2xl:text-4xl mb-8 2xl:mb-12">
-              Fotogalerie
-            </h1>
-            <a href="#">
-              <div class="relative h-72 2xl:h-3/4 mb-4">
-                <img
-                  class="foto_item rotate-3"
-                  src="../images/clanek_photo2.png"
-                  alt=""
-                />
-                <img
-                  class="foto_item -rotate-6"
-                  src="../images/clanek_photo3.png"
-                  alt=""
-                />
-                <img
-                  class="foto_item"
-                  src="../images/clanek_photo4.png"
-                  alt=""
-                />
-              </div>
-            </a>
-          </div>
-          <!-- Foto -->
-          <!-- Tabulka -->
-          <div class="md:w-1/2">
             <div class="flex flex-col mb-4">
               <h1 class="font-bold text-2xl 2xl:text-4xl mb-4 2xl:mb-8">
-                Tabulka
+                Poslední výsledky
               </h1>
               <select
                 class="w-1/4 cursor-pointer outline-none bg-club_white"
-                name="category"
-                id="category"
+                name="month"
+                id="month"
               >
-                <option value="">Muži</option>
-                <option value="">U19</option>
-                <option value="">U18</option>
+                <option value="">11.2021</option>
+                <option value="">10.2021</option>
+                <option value="">9.2021</option>
               </select>
             </div>
-            <div>
-              <table class="w-full table_container">
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <img loading="lazy" class="w-5" src="../images/logo.png" alt="" />
-                  </td>
-                  <td><strong>SK Kelti 2008</strong></td>
-                  <td>22</td>
-                  <td>41:22</td>
-                  <td><strong>54</strong></td>
-                </tr>
-              </table>
+            <div class="flex flex-col text-white">
+              <div class="flex flex-col space-y-2 bg-club_gray py-2 px-3 border-b border-white border-opacity-20">
+                <div class="flex items-center">
+                  <div class="flex items-cent mr-16er">
+                    <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                    <h3 class="text-base">Kelti</h3>
+                  </div>
+                  <h3 class="text-base">0</h3>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex items-cent mr-16er">
+                    <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                    <h3 class="text-base">Kelti</h3>
+                  </div>
+                  <h3 class="text-base">0</h3>
+                </div>
+              </div>
+              <div class="flex flex-col space-y-2 bg-club_gray py-2 px-3 border-b border-club_gray border-opacity-20">
+                <div class="flex items-center">
+                  <div class="flex items-cent mr-16er">
+                    <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                    <h3 class="text-base">Kelti</h3>
+                  </div>
+                  <h3 class="text-base">0</h3>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex items-cent mr-16er">
+                    <img class="w-8 h-8 object-contain mr-3" src="../images/logo.png" alt="">
+                    <h3 class="text-base">Kelti</h3>
+                  </div>
+                  <h3 class="text-base">0</h3>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Tabulka -->
+          <!-- Foto -->
+        
         </div>
         <!-- Novinky, Foto, Tabulka -->
         <!-- Partneri -->
@@ -753,6 +855,8 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./app.js"></script>
   </body>
 </html>

@@ -10,6 +10,7 @@ module.exports = {
         club_white: "#E9E9EA",
         club_yellow: "#B88400",
         fb: "#4267B2",
+        club_gray: "#1C1C1C"
       },
       fontFamily: {
         body: ['"Inter"', "sans-serif"],
@@ -28,6 +29,7 @@ module.exports = {
       height: {
         26: "104px",
         112: "440px",
+        '80vh': "80vh",
         max: "max-content",
       },
       width: {
