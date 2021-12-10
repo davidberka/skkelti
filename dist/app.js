@@ -169,32 +169,21 @@ checkDistanceFromTop('.text_container', 'article');
 checkDistanceFromTop('.match_text', 'match');
 // CHECK DISTANCE FROM THE TOP - P ELEMENT - END
 
- $('.matches_slick').slick({
-    dots: false,
-    arrows: false,
-    infinite: false,
-    draggable: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        }
+$('.matches_slick1, .matches_slick2').slick({
+  dots: false,
+  arrows: false,
+  infinite: false,
+  draggable: true,
+  variableWidth: true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
       }
-    ]
-  });
+    }
+  ]
+});
