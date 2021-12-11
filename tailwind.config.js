@@ -33,8 +33,8 @@ module.exports = {
         max: "max-content",
       },
       width: {
-        79: "19.6rem",
-        88: "22.2rem",
+        79: "19.1rem",
+        88: "21.4rem",
         106: "410px",
         150: "620px",
         200: "850px",

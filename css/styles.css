@@ -159,7 +159,7 @@
     @apply bg-club_white px-3 py-9 2xl:py-16;
   }
   .multi_section_row1 {
-    @apply flex flex-col md:flex-wrap md:flex-row space-y-9 md:space-y-0 md:gap-y-6 md:justify-between py-9 px-3 md:pt-0 2xl:pb-16 border-b border-b-dark_blue border-opacity-20;
+    @apply flex flex-col md:flex-wrap md:flex-row gap-y-9 md:justify-between py-9 px-3 md:pt-0 2xl:pb-16 border-b border-b-dark_blue border-opacity-20;
   }
   .multi_section_clanek {
     @apply flex md:flex-col md:w-64 2xl:w-79 3xl:w-88;
