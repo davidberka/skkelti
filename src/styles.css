@@ -2398,6 +2398,9 @@ video {
 .gap-3 {
 	gap: 0.75rem;
 }
+.gap-4 {
+	gap: 1rem;
+}
 .gap-x-12 {
 	-moz-column-gap: 3rem;
 	     column-gap: 3rem;
@@ -3156,6 +3159,10 @@ video {
 		height: 8rem;
 	}
 
+	.xl\:h-36 {
+		height: 9rem;
+	}
+
 	.xl\:w-3\/4 {
 		width: 75%;
 	}
@@ -3170,6 +3177,10 @@ video {
 
 	.xl\:w-32 {
 		width: 8rem;
+	}
+
+	.xl\:w-36 {
+		width: 9rem;
 	}
 
 	.xl\:space-x-9 > :not([hidden]) ~ :not([hidden]) {
@@ -3271,6 +3282,14 @@ video {
 		height: 16rem;
 	}
 
+	.\32xl\:h-40 {
+		height: 10rem;
+	}
+
+	.\32xl\:h-44 {
+		height: 11rem;
+	}
+
 	.\32xl\:w-5\/6 {
 		width: 83.333333%;
 	}
@@ -3317,6 +3336,10 @@ video {
 
 	.\32xl\:w-3\/4 {
 		width: 75%;
+	}
+
+	.\32xl\:w-44 {
+		width: 11rem;
 	}
 
 	.\32xl\:flex-1 {
