@@ -62,7 +62,7 @@
 
 @layer components {
   .header {
-    @apply z-50 relative w-full h-24 lg:h-28 px-3 bg-light_blue text-club_white border-b-2 2xl:border-b-4 border-club_white;
+    @apply z-50 relative w-full h-24 lg:h-36 px-3 bg-light_blue text-club_white border-b-2 2xl:border-b-4 border-club_white;
   }
   .header_container {
     @apply h-full w-full flex items-center justify-between lg:justify-start lg:w-11/12 lg:mx-auto 2xl:w-5/6 3xl:w-3/4;
@@ -150,13 +150,13 @@
     @apply z-10 relative border border-club_white text-club_white text-sm rounded-full py-2 px-4 xl:py-4 xl:px-8 flex transition-all hover:scale-105 hover:shadow-xl items-center;
   }
   .social_section {
-    @apply bg-club_white px-3 py-9 2xl:py-16;
+    @apply bg-white p-3;
   }
   .social_item {
-    @apply w-full bg-gray-300 py-8 2xl:py-12 flex  items-center  justify-center backdrop-filter backdrop-blur-sm;
+    @apply w-full py-8 2xl:py-12 flex  items-center  justify-center backdrop-filter backdrop-blur-sm;
   }
   .multi_section {
-    @apply bg-club_white px-3 py-9 2xl:py-16;
+    @apply bg-white px-3 py-9 2xl:py-16;
   }
   .multi_section_row1 {
     @apply flex flex-col md:flex-wrap md:flex-row gap-y-9 md:justify-between py-9 px-3 md:pt-0 2xl:pb-16 border-b border-b-dark_blue border-opacity-20;
@@ -334,11 +334,14 @@
 }
 @layer utilities {
   .win {
-    @apply text-green-700;
+    @apply text-green-500;
   } 
   .lost {
     @apply text-red-600;
   } 
+  .ig {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  }
 }
 .truncate {
   overflow: hidden;

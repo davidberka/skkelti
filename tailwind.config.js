@@ -10,6 +10,7 @@ module.exports = {
         club_white: "#E9E9EA",
         club_yellow: "#B88400",
         fb: "#4267B2",
+        yt: "#FF0000",
         club_gray: "#1C1C1C"
       },
       fontFamily: {
@@ -47,7 +48,7 @@ module.exports = {
         "3xl": "1920px",
       },
       gridTemplateColumns: {
-        "top-articles": "1.3fr 0.7fr"
+        "top-articles": "1fr 0.5fr 0.5fr"
       }
     },
   },

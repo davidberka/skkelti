@@ -183,12 +183,21 @@
       </div>
     </header>
     <main>
-      <section class="statistics">
+      <section class="statistics bg-dark_blue">
+        <img
+          class="hidden 2xl:block 2xl:absolute 2xl:right-0 pointer-events-none"
+          src="../images/bg.png"
+          alt=""
+        />
         <div class="lg:w-5/6 lg:mx-auto 3xl:w-3/4">
             <div class="mb-4 2xl:mb-8 flex flex-wrap items-center justify-between">
-                <h1>Zápasy</h1>
+                <h1 class="text-white">Zápasy</h1>
+                <select name="season" id="season" class="h-max ml-auto self-end px-4 py-2 rounded border border-club_yellow focus:outline-none focus:ring-2 focus:ring-club_yellow">
+                    <option value="">2021/22</option>
+                    <option value="">2020/21</option>
+                </select>
             </div>
-            <div class="flex flex-col gap-3 mb-4 2xl:mb-8 md:flex-wrap md:flex-row">
+            <!-- <div class="flex flex-col gap-3 mb-4 2xl:mb-8 md:flex-wrap md:flex-row">
                 <div class="bg-dark_blue text-club_white md:w-80 p-4 2xl:p-8 flex flex-col space-y-4 2xl:space-y-6">
                     <h4>Předchozí zápas</h4>
                     <span class="text-sm text-club_yellow">2. kolo, st 17.11.2021</span>
@@ -233,13 +242,9 @@
                         <a class="uppercase w-max flex items-center text-sm text-club_white bg-light_blue font-bold p-1 rounded 2xl:px-3 2xl:py-1" href="#">Vstupenky</a>
                     </div>
                 </div>
-                <select name="season" id="season" class="h-max ml-auto self-end px-4 py-2 rounded border border-club_yellow focus:outline-none focus:ring-2 focus:ring-club_yellow">
-                    <option value="">2021/22</option>
-                    <option value="">2020/21</option>
-                </select>
-            </div>
-            <div>
-                <div class="flex flex-col space-y-2 md:space-y-0 odd:bg-light_blue odd:bg-opacity-10 p-4 md:flex-row md:items-center">
+            </div> -->
+            <div class="text-white">
+                <div class="flex flex-col space-y-2 md:space-y-0 odd:bg-club_white odd:bg-opacity-20 p-4 md:flex-row md:items-center">
                     <div class="text-center md:w-15p">
                         <span class="text-main-blue">2. kolo</span>  
                         <h4>2. 9. 2021, 18:00</h4>
@@ -284,7 +289,7 @@
                         <a class="hover:shadow-md transition-shadow uppercase flex items-center text-sm text-club_white bg-light_blue font-bold p-1 rounded 2xl:px-3 2xl:py-2" href="match.html">Reportáž</a>
                     </div>
                 </div>
-                <div class="flex flex-col space-y-2 md:space-y-0 odd:bg-light_blue odd:bg-opacity-10 p-4 md:flex-row md:items-center">
+                <div class="flex flex-col space-y-2 md:space-y-0 odd:bg-club_white odd:bg-opacity-20 p-4 md:flex-row md:items-center">
                     <div class="text-center md:w-15p">
                         <span class="text-main-blue">2. kolo</span>  
                         <h4>2. 9. 2021, 18:00</h4>
@@ -448,22 +453,19 @@
               md:space-y-0 md:space-x-3
             "
           >
-            <div class="social_item">
+            <div class="social_item bg-fb">
               <div class="flex flex-col items-center">
-                <img loading="lazy" src="../images/svgs/fb.svg" alt="" />
-                <h5 class="text-dark_blue text-sm mt-2">Facebook</h5>
+                <h2 class="text-white mt-2">Facebook</h2>
               </div>
             </div>
-            <div class="social_item">
+            <div class="social_item bg-yt">
               <div class="flex flex-col items-center">
-                <img loading="lazy" src="../images/svgs/yt.svg" alt="" />
-                <h5 class="text-dark_blue text-sm mt-2">Youtube</h5>
+                <h2 class="text-white mt-2">Youtube</h2>
               </div>
             </div>
-            <div class="social_item">
+            <div class="social_item ig">
               <div class="flex flex-col items-center">
-                <img loading="lazy" src="../images/svgs/ig.svg" alt="" />
-                <h5 class="text-dark_blue text-sm mt-2">Instagram</h5>
+                <h2 class="text-white mt-2">Instagram</h2>
               </div>
             </div>
           </div>
